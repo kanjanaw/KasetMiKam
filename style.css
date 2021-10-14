@@ -7,7 +7,7 @@ body{
 }
 
 .flex-inline-center{
-	display:inline-block;
+	display:flex;
     justify-content:center;
     align-items:center;
     text-align:center;
@@ -20,7 +20,7 @@ body{
 }	
 
 .first-bg{
-	background-image: url(BG1.JPG);
+	background-image: url(img/BG1.JPG);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
@@ -53,8 +53,7 @@ body{
 
 .logo{
 	width: 5%;
-	position: fixed;
-	right: 0;
-	margin-right: 0.25rem;
-	margin-top: 0.25rem;
+	margin-right: 0.5rem;
+	margin-top: 0.5rem;
+    z-index: auto;
 }
