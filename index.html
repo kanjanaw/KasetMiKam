@@ -16,7 +16,7 @@
 				<img class="mp-0" src="img/gif-run.gif" width="26%">
 				<h1 class="title mp-0">เกษตร</h1>
 				<h1 class="title mp-0"><span class="thin">(มี) </span>กรรม</h1><br>
-				<a class="next-page" href="#parallex">คลิกเพื่อไปต่อ</a>
+				<a class="next-page" onclick="nextparallex()">คลิกเพื่อไปต่อ</a>
 			</div>
 		</div>		
 	</div>
@@ -42,6 +42,8 @@
 
 </body>
 <script>
-
+	function nextparallex() {
+		document.getElementById("parallex").scrollIntoView({behavior: 'smooth'});
+	}
 </script>
 </html>
