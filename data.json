@@ -1,0 +1,367 @@
+{
+    "6zdjCochVzbjzc8AWOKW": {
+        "metrics": {
+            "best": 145,
+            "correct": 195,
+            "help": 2,
+            "pass": 57,
+            "play": 101,
+            "question": 330,
+            "score": 193,
+            "usage": 32509692.96875
+        },
+        "updatedAt": 1629963543412
+    },
+    "8IOVPm5ZBasaCp6m4nLq": {
+        "metrics": {
+            "best": 76,
+            "correct": 83,
+            "hint": 3,
+            "pass": 29,
+            "play": 46,
+            "question": 138,
+            "score": 83,
+            "usage": 3414867.3125
+        },
+        "updatedAt": 1629353270258
+    },
+    "8PDgVjtdxTOnQXM4Y1kl": {
+        "metrics": {
+            "best": 135,
+            "correct": 184,
+            "help": 8,
+            "pass": 46,
+            "play": 88,
+            "question": 270,
+            "score": 189,
+            "usage": 4920869.078125
+        },
+        "updatedAt": 1629381663468
+    },
+    "AVtBQK118PAu60nAmkua": {
+        "metrics": {
+            "best": 169,
+            "correct": 247,
+            "hint": 1,
+            "pass": 58,
+            "play": 115,
+            "question": 354,
+            "score": 247,
+            "usage": 7980559.078125
+        },
+        "updatedAt": 1629955867046
+    },
+    "AofEFrkT7yKbKYQZcBi9": {
+        "metrics": {
+            "best": 92,
+            "correct": 158,
+            "help": 7,
+            "pass": 32,
+            "play": 78,
+            "question": 234,
+            "score": 158,
+            "usage": 3345955.2265625
+        },
+        "updatedAt": 1629358740052
+    },
+    "BB6P8wXhvPcvg4E7ME31": {
+        "metrics": {
+            "best": 62,
+            "correct": 71,
+            "pass": 26,
+            "play": 37,
+            "question": 111,
+            "score": 71,
+            "usage": 2048834.8828125
+        },
+        "updatedAt": 1627562501332
+    },
+    "D383KTET3AQJBrNOMmnD": {
+        "metrics": {
+            "best": 441,
+            "correct": 645,
+            "help": 15,
+            "pass": 149,
+            "play": 314,
+            "question": 969,
+            "score": 635,
+            "usage": 19076849.671875
+        },
+        "updatedAt": 1629648792433
+    },
+    "DY0yO6CAp2YAaiABYuAd": {
+        "metrics": {
+            "best": 102,
+            "correct": 141,
+            "help": 3,
+            "hint": 2,
+            "pass": 44,
+            "play": 96,
+            "question": 312,
+            "score": 138,
+            "usage": 4165516.3984375
+        },
+        "updatedAt": 1629646905260
+    },
+    "Go8bLxfNbC9lHf83r6P6": {
+        "metrics": {
+            "best": 32,
+            "correct": 34,
+            "pass": 17,
+            "play": 38,
+            "question": 113,
+            "score": 35,
+            "usage": 2315531.5
+        },
+        "updatedAt": 1627573720949
+    },
+    "Hj72a0mDH7H2Bg2fo6WM": {
+        "metrics": {
+            "best": 27,
+            "correct": 42,
+            "pass": 10,
+            "play": 49,
+            "question": 146,
+            "score": 52,
+            "usage": 1104534.125
+        },
+        "updatedAt": 1628389584720
+    },
+    "KBhjZcYtdfwW2R2RLHPw": {
+        "metrics": {
+            "best": 253,
+            "correct": 301,
+            "hint": 1,
+            "pass": 86,
+            "play": 125,
+            "question": 391,
+            "score": 298,
+            "usage": 7671435.8125
+        },
+        "updatedAt": 1629953264879
+    },
+    "RdqS0Y99atfoL1tRBwRc": {
+        "metrics": {
+            "best": 65,
+            "correct": 106,
+            "help": 2,
+            "pass": 23,
+            "play": 58,
+            "question": 174,
+            "score": 106,
+            "usage": 2645100.5859375
+        },
+        "updatedAt": 1629357443544
+    },
+    "SXg6EaIJBFoLe2OOlQ5W": {
+        "metrics": {
+            "best": 31,
+            "correct": 51,
+            "pass": 12,
+            "play": 32,
+            "question": 96,
+            "score": 51,
+            "usage": 528339.1875
+        },
+        "updatedAt": 1626928364078
+    },
+    "TGi4HehsLXBsQLfDU87L": {
+        "metrics": {
+            "best": 92,
+            "correct": 111,
+            "pass": 34,
+            "play": 46,
+            "question": 150,
+            "score": 107,
+            "usage": 4277530.9140625
+        },
+        "updatedAt": 1629424050427
+    },
+    "TmrwEE2oLyXl8hvfgSEd": {
+        "metrics": {
+            "best": 172,
+            "correct": 193,
+            "help": 1,
+            "pass": 61,
+            "play": 82,
+            "question": 252,
+            "score": 197,
+            "usage": 9030879.3203125
+        },
+        "updatedAt": 1629954303762
+    },
+    "U05l4rC1R1UGHBiKIjrO": {
+        "metrics": {
+            "best": 14,
+            "correct": 10,
+            "pass": 5,
+            "play": 6,
+            "question": 12,
+            "score": 14,
+            "usage": 122225.7578125
+        },
+        "updatedAt": 1628309503914
+    },
+    "aVx59kbSRUaZFEBsSSPZ": {
+        "metrics": {
+            "best": 3,
+            "correct": 3,
+            "pass": 1,
+            "play": 1,
+            "question": 3,
+            "score": 3,
+            "usage": 20188.578125
+        },
+        "updatedAt": 1626927490799
+    },
+    "bDcfwH6aET3R5wD2T9kz": {
+        "metrics": {
+            "best": 114,
+            "correct": 214,
+            "pass": 39,
+            "play": 145,
+            "question": 446,
+            "score": 213,
+            "usage": 6413444.640625
+        },
+        "updatedAt": 1629374951094
+    },
+    "cBwxR9GJNIKPnNH7YrZn": {
+        "metrics": {
+            "best": 26,
+            "correct": 49,
+            "help": 4,
+            "pass": 10,
+            "play": 37,
+            "question": 108,
+            "score": 52,
+            "usage": 1089359.96875
+        },
+        "updatedAt": 1629506484576
+    },
+    "fvcLMElBGengwHJWOTmR": {
+        "metrics": {
+            "best": 5,
+            "correct": 5,
+            "pass": 2,
+            "play": 3,
+            "question": 8,
+            "score": 6,
+            "usage": 118231.5015625
+        },
+        "updatedAt": 1626954551336
+    },
+    "gXdqWcbPurW45l9pXjPV": {
+        "metrics": {
+            "best": 2,
+            "correct": 4,
+            "pass": 1,
+            "play": 3,
+            "question": 9,
+            "score": 4,
+            "usage": 51350.7734375
+        },
+        "updatedAt": 1626927512858
+    },
+    "gapx2yEYbGAlWEy52hbP": {
+        "metrics": {
+            "best": 17,
+            "correct": 17,
+            "pass": 6,
+            "play": 14,
+            "question": 42,
+            "score": 17,
+            "usage": 2967131.796875
+        },
+        "updatedAt": 1629955640657
+    },
+    "glioBZPW0vpwK5AWiBCW": {
+        "metrics": {
+            "best": 103,
+            "correct": 151,
+            "help": 4,
+            "pass": 45,
+            "play": 122,
+            "question": 390,
+            "score": 139,
+            "usage": 9745566.6875
+        },
+        "updatedAt": 1628743792880
+    },
+    "hyfdOM8yGuV7VXvab7Qy": {
+        "metrics": {
+            "best": 121,
+            "correct": 175,
+            "help": 2,
+            "pass": 42,
+            "play": 80,
+            "question": 231,
+            "score": 182,
+            "usage": 1335184.359375
+        },
+        "updatedAt": 1629029699895
+    },
+    "iChXEdNUsBc2NDlQQU5l": {
+        "metrics": {
+            "best": 81,
+            "correct": 94,
+            "pass": 27,
+            "play": 33,
+            "question": 99,
+            "score": 94,
+            "usage": 7086735.8984375
+        },
+        "updatedAt": 1629687478721
+    },
+    "jqWjb2Igah4HmD7co2YY": {
+        "metrics": {
+            "best": 79,
+            "correct": 103,
+            "pass": 28,
+            "play": 40,
+            "question": 144,
+            "score": 95,
+            "usage": 6687737.875
+        },
+        "updatedAt": 1629727736143
+    },
+    "knSTREfU9jtc6VvGKGUX": {
+        "metrics": {
+            "best": 136,
+            "correct": 239,
+            "help": 16,
+            "pass": 48,
+            "play": 136,
+            "question": 442,
+            "score": 231,
+            "usage": 9233696.9921875
+        },
+        "updatedAt": 1629952635059
+    },
+    "path": "teachers/sUzzbAPzUM024zIHbIDe/aggs_v02/students",
+    "rD2RhrgiugBkbu47OA14": {
+        "metrics": {
+            "best": 38,
+            "correct": 74,
+            "help": 7,
+            "pass": 17,
+            "play": 81,
+            "question": 315,
+            "score": 65,
+            "usage": 3651200.671875
+        },
+        "updatedAt": 1629375960589
+    },
+    "ytC8KSFtxQ2MosURHpHp": {
+        "metrics": {
+            "best": 89,
+            "correct": 111,
+            "pass": 37,
+            "play": 55,
+            "question": 189,
+            "score": 102,
+            "usage": 23865083.4921875
+        },
+        "updatedAt": 1629388243046
+    }
+}
