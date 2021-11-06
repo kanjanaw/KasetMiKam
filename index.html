@@ -25,37 +25,61 @@
         </div>
       </div>
     </div>
-    <div class="fullscreen second-bg" id="parallex">
-      <div class="cloud index"></div>
-      <div class="sun index"></div>
-      <div class="mountain1 index"></div>
-      <div class="mountain2 index"></div>
-      <div class="ground1 index"></div>
-      <div class="flex-center index" id="parallexText">
-        <div class="text-center">
-          <h2 class="title mp-0">เกษตรกรไทย</h2>
-          <img src="img/gif1.gif" alt="" width="20%" />
-          <div class="block-1">
-            <p>
-              มีจำนวนมากถึง 14% จากประชากรทั้งหมด นับเป็นอาชีพที่สร้างรายได้
-              หลักให้แก่ประเทศ จนได้ชื่อว่าเป็น “ กระดูกสันหลังของชาติ ”
-            </p>
-          </div>
-        </div>
-      </div>
+	<div class="container" id="parallex">
+		<img src="img/paralax clound.PNG" alt="" class="index" width="100%">
+		<img src="img/paralax sun.PNG" alt="" class="index" width="100%">
+		<img src="img/paralax mt.PNG" alt="" class="index" width="100%">
+		<img src="img/paralax mt2.PNG" alt="" class="index" width="100%">
+		<img src="img/new paralax bg.png" alt="" class="index" width="100%">
 
-      <img
-        src="img/logoเกษตร-01 1.png"
-        alt=""
-        width="6.5%"
-        class="index"
-        style="right: 1%; margin-top: 1%"
-      />
-    </div>
+		<div class="fullscreen second-bg" >
+			<div class="flex-center index" id="parallexText">
+			  <div class="text-center">
+				<h2 class="title mp-0">เกษตรกรไทย</h2>
+				<img src="img/gif1.gif" alt="" width="20%" />
+				<div class="block-1">
+				  <p>
+					มีจำนวนมากถึง 14% จากประชากรทั้งหมด นับเป็นอาชีพที่สร้างรายได้
+					หลักให้แก่ประเทศ จนได้ชื่อว่าเป็น “ กระดูกสันหลังของชาติ ”
+				  </p>
+				</div>
+			  </div>
+			</div>
+	  
+			<img
+			  src="img/logoเกษตร-01 1.png"
+			  alt=""
+			  width="6.5%"
+			  class="index"
+			  style="right: 1%; margin-top: 1%"
+			/>
+		</div>
+
+		<div class="fullscreen second-bg flex-center" >
+			<div class="flex-center index" id="parallexText2">
+			  <div class="text-center">
+				<h3 class="regular">แต่ทำไม</h3>
+				<h2 class="title mp-0">ยิ่งทำ</h2>
+				<div class="flex-center">
+					<p class="block-2 text-left">
+						ทั้งปลูกพืชและเพาะเลี้ยงสัตว์บก<br>
+						และสัตว์น้ำทำทั้งสองอย่าง<br>
+						หรือทำไร่นาสวนผสม
+					</p>
+					<img src="img/gif2.gif" alt="" width="20%">
+				</div>
+			  </div>
+			</div>
+		</div>
+	</div>
+    
   </body>
   <script>
     $(window).load(function () {
-      $("#loader").delay(5000).fadeOut("slow");
+	  $("#parallex").hide();
+      $("#loader").delay(5000).fadeOut("slow", function(){
+		$("#parallex").show();
+	  });
     });
     function nextparallex() {
     	document.getElementById("parallex").scrollIntoView({behavior: 'smooth'});
