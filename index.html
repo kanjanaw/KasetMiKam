@@ -13,18 +13,19 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
   </head>
   <body>
-    <!-- <div class="container first-bg flex-center" id="loader">
+    <div class="container first-bg flex-center" id="loader">
       <img class="logo" src="img/logo_kaset-01.png" width="80%"/>
       <div class="flex-center" style="margin: 5rem">
         <div>
-          <img class="mp-0" src="img/gif-run.gif" width="26%" />
-          <h1 class="title mp-0">เกษตร</h1>
-          <h1 class="title mp-0"><span class="thin">(มี) </span>กรรม</h1>
+          <img class="mb-0" src="img/gif-run.gif" width="20%" />
+          <h2 class="title mp-0">เกษตร</h2>
+          <h2 class="title mp-0"><span class="thin">(มี) </span>กรรม</h2>
           <br />
           <a class="next-page" onclick="nextparallex()">คลิกเพื่อไปต่อ</a>
         </div>
       </div>
-    </div> -->
+    </div>
+
     <div class="container" id="parallex">
       <!-- background layer -->
       <img src="img/paralax clound.PNG" alt="" class="index" width="100%" />
@@ -64,7 +65,7 @@
 			  style="flex-direction: column; overflow: hidden"
 			  id="parallexText2"
 			>
-			  <h3 class="regular">แต่ทำไม</h3>
+			  <h4 class="regular">แต่ทำไม</h4>
 			  <h2 class="title mp-0">ยิ่งทำ</h2>
 			  <div class="mt-4" style="display: flex; justify-content: center">
 				<p class="block-text text-left">
@@ -97,8 +98,8 @@
 			  id="parallexText3"
 			>
 			  <h2 class="title" style="margin-bottom: 7vh">ยิ่งจน</h2>
-			  <div class="block-text" style="padding: 3vh 7vw">
-				<p class="">
+			  <div class="block-text" style="padding: 2vh 7vw">
+				<p>
 				  เมื่อแบ่งระดับสภาวะทางการเงินของเกษตรกร<br />
 				  พบว่าเกษตรกรไทยอยู่ในสภาวะ
 				</p>
@@ -131,39 +132,29 @@
 			  alt=""
 			  width="23%"
 			  class="index"
-			  style="margin-left: -21vw; margin-top: 35vh"
+			  style="margin-left: -21vw; margin-top: 28vh"
 			/>
 		  </div>
 	
 		  <!-- section 4 -->
 		  <div class="fullscreen">
 			<div
-			  class="flex-center index"
-			  style="flex-direction: column; overflow: hidden"
-			  id="parallexText2"
+			  class="flex-center index text-center"
+			  id="parallexText"
+			  style="flex-direction: column"
 			>
-			  <h3 class="regular">แต่ทำไม</h3>
-			  <h2 class="title mp-0">ยิ่งทำ</h2>
-			  <div class="mt-4" style="display: flex; justify-content: center">
-				<p class="block-text text-left">
-				  ทั้งปลูกพืชและเพาะเลี้ยงสัตว์บก<br />
-				  และสัตว์น้ำทำทั้งสองอย่าง<br />
-				  หรือทำไร่นาสวนผสม
-				</p>
-				<img
-				  src="img/gif2.gif"
-				  alt=""
-				  width="23%"
-				  style="margin-top: 6vh"
-				/>
+			  <h2 class="title mp-0">ทำไม</h2>
+			  <h3 class="title2 mp-0">ถึงเป็นเช่นนั้น</h3>
+			  <div class="mt-2" style="display: flex; justify-content: center; flex-direction: column;">
+				<div class="block-text text-center" style="padding: 1vh 5vw">
+					<p>
+						ตามไปดูปัญหา<br>
+						ที่เกษตรกรชาวไทยต้องเผชิญกันดีกว่า
+					</p>
+					<button style="  margin-bottom: 2.5vh;">เริ่ม</button>
+				</div>
+				
 			  </div>
-			  <img
-				src="img/paralax 2.png"
-				alt=""
-				width="33%"
-				class="index"
-				style="margin-top: -20vh; margin-right: -92vw"
-			  />
 			</div>
 		  </div>
 
@@ -171,13 +162,14 @@
 
     </div>
   </body>
+
   <script>
-    // $(window).load(function () {
-    //   $("#parallex").hide();
-    //   $("#loader").delay(5000).fadeOut("slow", function(){
-    // 	$("#parallex").show();
-    //   });
-    // });
+    $(window).load(function () {
+      $("#parallex").hide();
+      $("#loader").delay(5000).fadeOut("slow", function(){
+    	$("#parallex").show();
+      });
+    });
     function nextparallex() {
       document
         .getElementById("parallex")

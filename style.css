@@ -6,12 +6,15 @@ body {
   overflow-x: hidden;
 }
 h1 {
-  font-size: 3vw;
+  font-size: 9vw;
 }
 h2 {
   font-size: 8vw;
 }
 h3 {
+  font-size: 6vw;
+}
+h4 {
   font-size: 3.5vw;
 }
 p {
@@ -19,6 +22,19 @@ p {
   font-weight: 500;
   line-height: 160%;
   font-size: 1.2vw;
+}
+button {
+  height: fit-content;
+  width: fit-content;
+  color: black;
+  background: hsla(22, 100%, 60%, 1);
+  border-radius: 15px;
+  padding: 0.5vh 1.2vw;
+  border: none;
+  font-size: 1.5vw;
+  font-weight: 500;
+  font-family: "Mitr", sans-serif;
+  cursor: pointer;
 }
 .flex-center {
   display: flex;
@@ -217,10 +233,14 @@ p {
   -webkit-text-stroke: 3px black;
   line-height: 80%;
 }
+.title2 {
+  font-weight: 600;
+  -webkit-text-stroke: 2px black;
+}
 
 .thin {
   font-weight: 300;
-  font-size: 6rem;
+  font-size: 6vw;
 }
 .regular {
   font-weight: 500;
@@ -310,10 +330,10 @@ p {
   height: 100vh;
 }
 
-.bg{
-	width: 100vw;
-	height: 400vh;
-	overflow: hidden;
+.bg {
+  width: 100vw;
+  height: 400vh;
+  overflow: hidden;
 }
 #loader {
   z-index: 1;
@@ -342,8 +362,8 @@ p {
   color: hsl(49, 54%, 63%);
 }
 
-.space-evenly{
-	display: flex;
-    justify-content:space-around; 
-	flex-direction: column;
+.space-evenly {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
 }
