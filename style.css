@@ -1,0 +1,181 @@
+* {
+	font-family: "IBM Plex Sans Thai Looped", sans-serif;
+	font-family: "Mitr", sans-serif;
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	overflow-x: hidden;
+	background: url(img/bg_test.png) no-repeat center center fixed;
+	background-size: cover;
+	height: 400vh;
+}
+
+.wrapper {
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 400%;
+	display: flex;
+	height: 100vh;
+}
+
+.section{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	box-sizing: border-box;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.box {
+	width: 40vh;
+	bottom: 0;
+	right: 0;
+	position: absolute;
+}
+
+.game-frame{
+	height: 100vh;
+	margin: 0;
+	padding: 0;
+}
+
+#farmer{
+	width: 30vh;
+	margin:auto;
+	position: fixed;
+  	bottom: 0;
+  	left: 0;
+  	right: 0;
+  	display: block;
+  	transform: rotateY(180deg);
+ }
+
+.inline-block-center{
+	display: inline-block;
+	justify-content: center;
+	align-items:center ;
+}
+
+#jaonee, #chemi, #naitoon{
+	width: 20vh;
+}
+
+#post {
+	font-size: 2em;
+	position: fixed;
+	top: 0;
+	right: 0;
+	background: tranparent;
+}
+
+h1 {
+  font-size: 9vw;
+}
+h2 {
+  font-size: 8vw;
+}
+h3 {
+  font-size: 6vw;
+}
+h4 {
+  font-size: 3.5vw;
+}
+p {
+  font-family: "Bai Jamjuree", sans-serif;
+  font-weight: 500;
+  line-height: 160%;
+  font-size: 1.2vw;
+}
+button {
+  height: fit-content;
+  width: fit-content;
+  color: black;
+  background: hsla(22, 100%, 60%, 1);
+  border-radius: 15px;
+  padding: 0.5vh 1.2vw;
+  border: none;
+  font-size: 1.5vw;
+  font-weight: 500;
+  font-family: "Mitr", sans-serif;
+  cursor: pointer;
+}
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.block-text {
+	background: #fff6c2;
+	height: fit-content;
+	width: fit-content;
+	color: black;
+	border-radius: 25px;
+	padding: 3.5vh 3.3vw;
+	position: absolute;
+	margin:auto;
+	top: -20vh;
+	bottom: 0;
+	right: 0;
+	box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+}
+
+.text-center {
+ 	text-align: center;
+}
+
+.content{
+	height: 100vh;
+	margin: 0;
+	padding: 0;
+}
+
+#sign-next:hover{
+	text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+#sign-btn{
+	box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+}
+
+#land-prob{
+	display: none;
+	right: -10vw;
+	top: -25vh;
+	cursor: pointer;
+}
+
+#speech1, #jaonee-content2, #jaonee-choice{
+	display: none;
+	cursor: pointer;
+}
+
+#next-loan{
+	top: 0;
+	right: 5vw;
+	display: none;
+}
+
+#next-loan-btn{
+	cursor: pointer;
+}
+
+#loan-warning, #loan-warning2, #jaonee-warning{
+	font-weight: bold;
+	color: darkred;
+	display: none;
+}
+
+#lia-prob{
+	display: none;
+	right: -10vw;
+	top: -25vh;
+	cursor: pointer;
+}

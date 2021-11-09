@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Mini Game</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+	<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+	<script type="text/javascript" src="main.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script> 
+	
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai+Looped:wght@100;200;300;400;500;600;700&family=Mitr:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+	<!-- Game Elements move -->
+	<div class="wrapper" id="wrapper">
+		<div class="section">
+
+		</div>
+		<!-- Game Start -->
+		<div class="section">
+		  	<img class="box" id="sign" src="img/ที่ดินดีย์-1.gif">
+		  	<div class="block-text text-center" id="sign-content" style="padding: 1vh 5vw">
+		      <p>เกษตรกรจะปลูกพืชผักได้ก็ต้องมี “ที่ดิน”</p>
+		      <button id="sign-btn" style="margin-bottom: 2.5vh">คลิกเพื่อเรียนรู้ปัญหาที่ดิน</button>
+		   </div>
+		   <div class="block-text text-left" id="land-prob"  style="padding: 1vh 5vw">
+			    <p>เกษตรกรส่วนใหญ่ไม่มีกรรมสิทธิ์ที่ดินทำกินเป็นของตนเอง ทำให้ไม่สามารถที่จะเข้าสู้ระบบทุนนิยมได้<br>
+			สืบเนื่องมาจากปัญหาการกว้านซื้อที่ดินจากนายทุน และการใช้ที่ดินแบบผิดประเภท<br> ทำให้สูญเสียที่ดินที่เหมาะแก่การทำการเกษตรให้กับพวกโรงงานอุตสาหกรรม รีสอร์ท บ้านจัดสรร <br>หรือแม้กระทั่งการถูกปล่อยทิ้งร้างไว้อีกด้วย</p>
+			  	<p>90% ของที่ดินทั้งหมดถูกครอบครองโดยคนเพียงแค่ 10% <br>
+			75% เป็นคนไทยที่ไม่มีโฉนดเป็นของตนเอง</p>
+			  	<p>ในปัจจุบัน รัฐมีนโยบายเขตพัฒนาเศรษฐกิจซึ่งเปิดโอกาสให้กับนักลงทุนรายใหญ่ <br>แต่กลับไม่มีเศรษฐกิจพิเศษสำหรับประชาชนเหล่านี้เลย</p>
+			</div>
+			<div class="block-text text-left" id="speech1" style="padding: 1vh 5vw">
+			      <p>เราก็เป็นแค่ชาวบ้านธรรมดา  ทำงานหาเช้ากินค่ำ <br>
+			ไม่มีเงินมากมายพอที่จะเอาไปเช่าที่ปีละเป็นแสนๆได้หรอก
+			</p>
+			</div>
+  			<div class="block-text text-center" id="next-loan" style="padding: 1vh 5vw">
+		       <button id="next-loan-btn" style="margin-bottom: 2.5vh">หาแหล่งเงินกู้เพื่อไปต่อ</button>
+		   	</div>
+		</div>
+
+		<!-- Gov Bank -->
+		<div class="section">
+		  	<img class="box" id="gov" src="img/gov-1.gif">
+		  	<div class="block-text text-center" id="gov-content" style="padding: 1vh 5vw">
+				<p>กู้เงินไหมครับ ?</p>
+			    <button id="loan-yes" style="margin-bottom: 2.5vh">กู้เลย !</button>
+			  	<button id="loan-no" style="margin-bottom: 2.5vh">ไม่กู้</button> 
+			  	<p id="loan-warning">ไม่ผ่าน! คุณไม่มีหลักทรัพย์เพื่อใช้ในการค้ำประกัน</p>
+			</div>
+		</div>
+
+		<!-- Private Bank -->
+		<div class="section">
+		  	<img class="box" id="private" src="img/private-1.gif">
+		  	<div class="block-text text-center" id="private-content" style="padding: 1vh 5vw">
+				<p>กู้เงินไหมครับ ?</p>
+			    <button id="loan-yes2" style="margin-bottom: 2.5vh">กู้เลย !</button>
+			  	<button id="loan-no2" style="margin-bottom: 2.5vh">ไม่กู้</button> 
+			  	<p id="loan-warning2">ไม่ผ่าน! คุณไม่มีหลักทรัพย์เพื่อใช้ในการค้ำประกัน</p>
+			</div>
+		</div>
+		
+		<div class="section">
+		  	<img class="box" id="jaonee" src="img/jaonee.gif">
+		  	<div class="block-text text-center" id="jaonee-content" style="padding: 1vh 5vw">
+			  	<p>กู้หนี้นอกระบบไหมครับ ?</p>
+			    <button id="jaonee-btn" style="margin-bottom: 2.5vh">คลิกเพื่อเรียนรู้ปัญหาหนี้สิน</button>
+			</div>
+			<div class="block-text text-left" id="lia-prob" style="padding: 1vh 5vw">
+			  	<p>เกษตรกรที่ไม่มีที่ดินทำกินเป็นของตนเองจำเป็นที่จะต้องเช่าที่ดิน  เมื่อเช่าที่ดินก็ต้องใช้เงินกู้ <br>แต่เกษตรกรไม่มีหลักทรัพย์มากพอจะไปทำการกู้เงินกับธนาคารรัฐหรือธนาคารเอกชนได้  <br>ทำให้เกษตรกรส่วนใหญ่ตัดสินใจที่จะกู้เงินนอกระบบเพราะไม่สามารถหาแหล่งเงินทุนที่ถูกกฏหมายได้</p>
+				<p>เกษตรกรไทยมีรายได้เฉลี่ยต่อหัว 57,000 บาทต่อปี <br> 
+			เฉลี่ยเดือนหนึ่งไม่ถึง 4,000 กว่าบาท<br>กว่า 40 % มีหนี้สินมากกว่า 2 เท่าครึ่งของรายได้</p>
+			</div>
+			<div class="block-text text-center" id="jaonee-content2" style="padding: 1vh 5vw">
+			  <p>ถึงดอกจะแพง แต่ก็หาที่อื่นไม่ได้อีกแล้ว <br>ต้องกู้จากเจ้านี้แล้วล่ะ</p>
+			</div>
+			<div class="block-text text-center" id="jaonee-choice" style="padding: 1vh 5vw">
+			  <button id="jaonee-yes" style="margin-bottom: 2.5vh">กู้เงินจากเจ้าหนี้</button>
+			  <button id="jaonee-no" style="margin-bottom: 2.5vh">ไม่กู้</button>
+			  <p id="jaonee-warning">ไม่กู้ไม่ได้นะ! คุณไม่มีเงินเหลือแล้ว!</p>
+			</div>
+		</div>
+		<!--
+		<div class="section">
+		  	<img class="box" id="chemi" src="img/chemi.gif">
+		</div>
+		<div class="section">
+		  	<img class="box" id="naitoon" src="img/naitoon.gif">
+		</div>
+		<div class="section">
+		  	
+		</div> -->
+		<div class="section">
+		  	
+		</div>
+	</div>
+
+	<!-- Farmer -->
+	<div class="game-frame">
+		<img id="farmer" src="img/farmer2.gif">
+	</div>
+
+
+
+	<!-- Content 
+	<div class="content">
+		
+	</div>
+	-->
+
+
+	<div id="post">
+	  Collision is <span id="yyy"></span>
+	</div>
+
+
+</body>
+
+<script type="text/javascript">
+	
+	const signContent = document.querySelector("#sign-content");
+	const signBtn = document.querySelector("#sign-btn");
+	const landProb = document.querySelector("#land-prob");
+	const speech1 = document.querySelector("#speech1");
+	const nextLoan = document.querySelector("#next-loan");
+	const nextLoanBtn = document.querySelector("#next-loan-btn");
+	const govContent = document.querySelector("#gov-content");
+	const yesLoanBtn = document.querySelector("#loan-yes");
+	const noLoanBtn = document.querySelector("#loan-no");
+	const loanWarning = document.querySelector("#loan-warning");
+	const privateContent = document.querySelector("#private-content");
+	const yesLoanBtn2 = document.querySelector("#loan-yes2");
+	const noLoanBtn2 = document.querySelector("#loan-no2");
+	const loanWarning2 = document.querySelector("#loan-warning2");
+	const jaoneeContent = document.querySelector("#jaonee-content");
+	const jaoneeBtn = document.querySelector("#jaonee-btn");
+	const liaProb = document.querySelector("#lia-prob");
+	const jaoneeContent2 = document.querySelector("#jaonee-content2");
+	const jaoneeChoice = document.querySelector("#jaonee-choice");
+	const yesJaoneeBtn = document.querySelector("#jaonee-yes");
+	const noJaoneeBtn = document.querySelector("#jaonee-no");
+	const jaoneeWarning = document.querySelector("#jaonee-warning");
+
+	signBtn.addEventListener("click", readLandProb);
+	landProb.addEventListener("click", goToSpeech1);
+	speech1.addEventListener("click", goToNextLoan);
+	nextLoanBtn.addEventListener("click", goToStateBank);
+	yesLoanBtn.addEventListener("click", goToYesLoan);
+	noLoanBtn.addEventListener("click", goToNoLoan);
+	yesLoanBtn2.addEventListener("click", goToYesLoan2);
+	noLoanBtn2.addEventListener("click", goToNoLoan2);
+	jaoneeBtn.addEventListener("click", readLiaProb);
+	liaProb.addEventListener("click", goTojaoneeContent2);
+	jaoneeContent2.addEventListener("click", goTojaoneeChoice);
+	yesJaoneeBtn.addEventListener("click", goToYesJaonee);
+	noJaoneeBtn.addEventListener("click", goToNoJaonee);
+
+	function readLandProb() {
+		signContent.style.display = "none";
+	  	landProb.style.display = "block";
+	  	
+	}
+
+	function goToSpeech1() {
+		landProb.style.display = "none";
+	  	speech1.style.display = "block";
+
+	}
+
+	function goToNextLoan() {
+		speech1.style.display = "none";
+	  	nextLoan.style.display = "block";
+
+	}
+
+	function goToStateBank() {
+	  	nextLoan.style.display = "none";
+	  	window.onscroll = function() {};
+	}
+
+
+	/* Loan */
+	function goToYesLoan() {
+	  	loanWarning.style.display = "block";
+	}
+
+	function goToNoLoan() {
+		govContent.style.display = "none";
+	  	window.onscroll = function() {};
+	}
+
+	function goToYesLoan2() {
+	  	loanWarning2.style.display = "block";
+	}
+
+	function goToNoLoan2() {
+		privateContent.style.display = "none";
+	  	window.onscroll = function() {};
+	}
+
+	/*Lia*/
+	function readLiaProb() {
+		jaoneeContent.style.display = "none";
+	  	liaProb.style.display = "block";
+	  	
+	}
+
+	function goTojaoneeContent2() {
+		liaProb.style.display = "none";
+	  	jaoneeContent2.style.display = "block";
+	  	
+	}
+
+	function goTojaoneeChoice() {
+		jaoneeContent2.style.display = "none";
+	  	jaoneeChoice.style.display = "block";
+	  	
+	}
+
+	function goToYesJaonee() {
+		jaoneeChoice.style.display = "none";
+	  	window.onscroll = function() {};	
+	}
+
+	function goToNoJaonee() {
+	  	jaoneeWarning.style.display = "block";
+	  	
+	}
+
+
+
+
+</script>
+</html>
