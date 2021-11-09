@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -8,12 +9,15 @@
 
 	<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
 	<script type="text/javascript" src="main.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script> 
-	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai+Looped:wght@100;200;300;400;500;600;700&family=Mitr:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+	<link
+		href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai+Looped:wght@100;200;300;400;500;600;700&family=Mitr:wght@200;300;400;500;600;700&display=swap"
+		rel="stylesheet">
 </head>
+
 <body>
 	<!-- Game Elements move -->
 	<div class="wrapper" id="wrapper">
@@ -22,68 +26,76 @@
 		</div>
 		<!-- Game Start -->
 		<div class="section">
-		  	<img class="box" id="sign" src="img/ที่ดินดีย์-1.gif">
-		  	<div class="block-text text-center" id="sign-content" style="padding: 1vh 5vw">
-		      <p>เกษตรกรจะปลูกพืชผักได้ก็ต้องมี “ที่ดิน”</p>
-		      <button id="sign-btn" style="margin-bottom: 2.5vh">คลิกเพื่อเรียนรู้ปัญหาที่ดิน</button>
-		   </div>
-		   <div class="block-text text-left" id="land-prob"  style="padding: 1vh 5vw">
-			    <p>เกษตรกรส่วนใหญ่ไม่มีกรรมสิทธิ์ที่ดินทำกินเป็นของตนเอง ทำให้ไม่สามารถที่จะเข้าสู้ระบบทุนนิยมได้<br>
-			สืบเนื่องมาจากปัญหาการกว้านซื้อที่ดินจากนายทุน และการใช้ที่ดินแบบผิดประเภท<br> ทำให้สูญเสียที่ดินที่เหมาะแก่การทำการเกษตรให้กับพวกโรงงานอุตสาหกรรม รีสอร์ท บ้านจัดสรร <br>หรือแม้กระทั่งการถูกปล่อยทิ้งร้างไว้อีกด้วย</p>
-			  	<p>90% ของที่ดินทั้งหมดถูกครอบครองโดยคนเพียงแค่ 10% <br>
-			75% เป็นคนไทยที่ไม่มีโฉนดเป็นของตนเอง</p>
-			  	<p>ในปัจจุบัน รัฐมีนโยบายเขตพัฒนาเศรษฐกิจซึ่งเปิดโอกาสให้กับนักลงทุนรายใหญ่ <br>แต่กลับไม่มีเศรษฐกิจพิเศษสำหรับประชาชนเหล่านี้เลย</p>
+			<img class="box" id="sign" src="img/ที่ดินดีย์-1.gif">
+			<div class="block-text text-center" id="sign-content" style="padding: 1vh 5vw">
+				<p>เกษตรกรจะปลูกพืชผักได้ก็ต้องมี “ที่ดิน”</p>
+				<button id="sign-btn" style="margin-bottom: 2.5vh">คลิกเพื่อเรียนรู้ปัญหาที่ดิน</button>
+			</div>
+			<div class="block-text text-left" id="land-prob" style="padding: 1vh 5vw">
+				<p>เกษตรกรส่วนใหญ่ไม่มีกรรมสิทธิ์ที่ดินทำกินเป็นของตนเอง ทำให้ไม่สามารถที่จะเข้าสู้ระบบทุนนิยมได้<br>
+					สืบเนื่องมาจากปัญหาการกว้านซื้อที่ดินจากนายทุน และการใช้ที่ดินแบบผิดประเภท<br>
+					ทำให้สูญเสียที่ดินที่เหมาะแก่การทำการเกษตรให้กับพวกโรงงานอุตสาหกรรม รีสอร์ท บ้านจัดสรร
+					<br>หรือแม้กระทั่งการถูกปล่อยทิ้งร้างไว้อีกด้วย
+				</p>
+				<p>90% ของที่ดินทั้งหมดถูกครอบครองโดยคนเพียงแค่ 10% <br>
+					75% เป็นคนไทยที่ไม่มีโฉนดเป็นของตนเอง</p>
+				<p>ในปัจจุบัน รัฐมีนโยบายเขตพัฒนาเศรษฐกิจซึ่งเปิดโอกาสให้กับนักลงทุนรายใหญ่
+					<br>แต่กลับไม่มีเศรษฐกิจพิเศษสำหรับประชาชนเหล่านี้เลย
+				</p>
 			</div>
 			<div class="block-text text-left" id="speech1" style="padding: 1vh 5vw">
-			      <p>เราก็เป็นแค่ชาวบ้านธรรมดา  ทำงานหาเช้ากินค่ำ <br>
-			ไม่มีเงินมากมายพอที่จะเอาไปเช่าที่ปีละเป็นแสนๆได้หรอก
-			</p>
+				<p>เราก็เป็นแค่ชาวบ้านธรรมดา ทำงานหาเช้ากินค่ำ <br>
+					ไม่มีเงินมากมายพอที่จะเอาไปเช่าที่ปีละเป็นแสนๆได้หรอก
+				</p>
 			</div>
-  			<div class="block-text text-center" id="next-loan" style="padding: 1vh 5vw">
-		       <button id="next-loan-btn" style="margin-bottom: 2.5vh">หาแหล่งเงินกู้เพื่อไปต่อ</button>
-		   	</div>
+			<div class="block-text text-center" id="next-loan" style="padding: 1vh 5vw">
+				<button id="next-loan-btn" style="margin-bottom: 2.5vh">หาแหล่งเงินกู้เพื่อไปต่อ</button>
+			</div>
 		</div>
 
 		<!-- Gov Bank -->
 		<div class="section">
-		  	<img class="box" id="gov" src="img/gov-1.gif">
-		  	<div class="block-text text-center" id="gov-content" style="padding: 1vh 5vw">
+			<img class="box" id="gov" src="img/gov-1.gif">
+			<div class="block-text text-center" id="gov-content" style="padding: 1vh 5vw">
 				<p>กู้เงินไหมครับ ?</p>
-			    <button id="loan-yes" style="margin-bottom: 2.5vh">กู้เลย !</button>
-			  	<button id="loan-no" style="margin-bottom: 2.5vh">ไม่กู้</button> 
-			  	<p id="loan-warning">ไม่ผ่าน! คุณไม่มีหลักทรัพย์เพื่อใช้ในการค้ำประกัน</p>
+				<button id="loan-yes" style="margin-bottom: 2.5vh">กู้เลย !</button>
+				<button id="loan-no" style="margin-bottom: 2.5vh">ไม่กู้</button>
+				<p id="loan-warning">ไม่ผ่าน! คุณไม่มีหลักทรัพย์เพื่อใช้ในการค้ำประกัน</p>
 			</div>
 		</div>
 
 		<!-- Private Bank -->
 		<div class="section">
-		  	<img class="box" id="private" src="img/private-1.gif">
-		  	<div class="block-text text-center" id="private-content" style="padding: 1vh 5vw">
+			<img class="box" id="private" src="img/private-1.gif">
+			<div class="block-text text-center" id="private-content" style="padding: 1vh 5vw">
 				<p>กู้เงินไหมครับ ?</p>
-			    <button id="loan-yes2" style="margin-bottom: 2.5vh">กู้เลย !</button>
-			  	<button id="loan-no2" style="margin-bottom: 2.5vh">ไม่กู้</button> 
-			  	<p id="loan-warning2">ไม่ผ่าน! คุณไม่มีหลักทรัพย์เพื่อใช้ในการค้ำประกัน</p>
+				<button id="loan-yes2" style="margin-bottom: 2.5vh">กู้เลย !</button>
+				<button id="loan-no2" style="margin-bottom: 2.5vh">ไม่กู้</button>
+				<p id="loan-warning2">ไม่ผ่าน! คุณไม่มีหลักทรัพย์เพื่อใช้ในการค้ำประกัน</p>
 			</div>
 		</div>
-		
+
 		<div class="section">
-		  	<img class="box" id="jaonee" src="img/jaonee.gif">
-		  	<div class="block-text text-center" id="jaonee-content" style="padding: 1vh 5vw">
-			  	<p>กู้หนี้นอกระบบไหมครับ ?</p>
-			    <button id="jaonee-btn" style="margin-bottom: 2.5vh">คลิกเพื่อเรียนรู้ปัญหาหนี้สิน</button>
+			<img class="box" id="jaonee" src="img/jaonee.gif">
+			<div class="block-text text-center" id="jaonee-content" style="padding: 1vh 5vw">
+				<p>กู้หนี้นอกระบบไหมครับ ?</p>
+				<button id="jaonee-btn" style="margin-bottom: 2.5vh">คลิกเพื่อเรียนรู้ปัญหาหนี้สิน</button>
 			</div>
 			<div class="block-text text-left" id="lia-prob" style="padding: 1vh 5vw">
-			  	<p>เกษตรกรที่ไม่มีที่ดินทำกินเป็นของตนเองจำเป็นที่จะต้องเช่าที่ดิน  เมื่อเช่าที่ดินก็ต้องใช้เงินกู้ <br>แต่เกษตรกรไม่มีหลักทรัพย์มากพอจะไปทำการกู้เงินกับธนาคารรัฐหรือธนาคารเอกชนได้  <br>ทำให้เกษตรกรส่วนใหญ่ตัดสินใจที่จะกู้เงินนอกระบบเพราะไม่สามารถหาแหล่งเงินทุนที่ถูกกฏหมายได้</p>
-				<p>เกษตรกรไทยมีรายได้เฉลี่ยต่อหัว 57,000 บาทต่อปี <br> 
-			เฉลี่ยเดือนหนึ่งไม่ถึง 4,000 กว่าบาท<br>กว่า 40 % มีหนี้สินมากกว่า 2 เท่าครึ่งของรายได้</p>
+				<p>เกษตรกรที่ไม่มีที่ดินทำกินเป็นของตนเองจำเป็นที่จะต้องเช่าที่ดิน เมื่อเช่าที่ดินก็ต้องใช้เงินกู้
+					<br>แต่เกษตรกรไม่มีหลักทรัพย์มากพอจะไปทำการกู้เงินกับธนาคารรัฐหรือธนาคารเอกชนได้
+					<br>ทำให้เกษตรกรส่วนใหญ่ตัดสินใจที่จะกู้เงินนอกระบบเพราะไม่สามารถหาแหล่งเงินทุนที่ถูกกฏหมายได้
+				</p>
+				<p>เกษตรกรไทยมีรายได้เฉลี่ยต่อหัว 57,000 บาทต่อปี <br>
+					เฉลี่ยเดือนหนึ่งไม่ถึง 4,000 กว่าบาท<br>กว่า 40 % มีหนี้สินมากกว่า 2 เท่าครึ่งของรายได้</p>
 			</div>
 			<div class="block-text text-center" id="jaonee-content2" style="padding: 1vh 5vw">
-			  <p>ถึงดอกจะแพง แต่ก็หาที่อื่นไม่ได้อีกแล้ว <br>ต้องกู้จากเจ้านี้แล้วล่ะ</p>
+				<p>ถึงดอกจะแพง แต่ก็หาที่อื่นไม่ได้อีกแล้ว <br>ต้องกู้จากเจ้านี้แล้วล่ะ</p>
 			</div>
 			<div class="block-text text-center" id="jaonee-choice" style="padding: 1vh 5vw">
-			  <button id="jaonee-yes" style="margin-bottom: 2.5vh">กู้เงินจากเจ้าหนี้</button>
-			  <button id="jaonee-no" style="margin-bottom: 2.5vh">ไม่กู้</button>
-			  <p id="jaonee-warning">ไม่กู้ไม่ได้นะ! คุณไม่มีเงินเหลือแล้ว!</p>
+				<button id="jaonee-yes" style="margin-bottom: 2.5vh">กู้เงินจากเจ้าหนี้</button>
+				<button id="jaonee-no" style="margin-bottom: 2.5vh">ไม่กู้</button>
+				<p id="jaonee-warning">ไม่กู้ไม่ได้นะ! คุณไม่มีเงินเหลือแล้ว!</p>
 			</div>
 		</div>
 		<!--
@@ -97,7 +109,7 @@
 		  	
 		</div> -->
 		<div class="section">
-		  	
+
 		</div>
 	</div>
 
@@ -116,14 +128,21 @@
 
 
 	<div id="post">
-	  Collision is <span id="yyy"></span>
+		Collision is <span id="yyy"></span>
+		farmer is <span id="farm"></span>
+		farmer2 is <span id="farm2"></span>
 	</div>
 
 
 </body>
 
 <script type="text/javascript">
-	
+	const o1 = document.querySelector("#farmer");
+	const o2 = document.querySelector("#sign");
+	const o3 = document.querySelector("#gov");
+	const o4 = document.querySelector("#private");
+	const o5 = document.getElementById("jaonee");
+
 	const signContent = document.querySelector("#sign-content");
 	const signBtn = document.querySelector("#sign-btn");
 	const landProb = document.querySelector("#land-prob");
@@ -147,6 +166,8 @@
 	const noJaoneeBtn = document.querySelector("#jaonee-no");
 	const jaoneeWarning = document.querySelector("#jaonee-warning");
 
+	document.addEventListener('scroll', update);
+	update();
 	signBtn.addEventListener("click", readLandProb);
 	landProb.addEventListener("click", goToSpeech1);
 	speech1.addEventListener("click", goToNextLoan);
@@ -160,81 +181,125 @@
 	jaoneeContent2.addEventListener("click", goTojaoneeChoice);
 	yesJaoneeBtn.addEventListener("click", goToYesJaonee);
 	noJaoneeBtn.addEventListener("click", goToNoJaonee);
+	// var re1 = o1.getBoundingClientRect();
+	// 	var smas1x = re1.right;
+	// 	var re2 = o2.getBoundingClientRect();
+	// 	var smas2x = re2.right;
+	// 	var si = re2.width;
+	// 	document.querySelector("#farm1").innerText = smas1x+si;
+	// 	document.querySelector("#farm2").innerText = smas2x;
 
+	function isSmash(obj1, obj2) {
+		var rect1 = obj1.getBoundingClientRect();
+		var smash1x = rect1.right;
+		var rect2 = obj2.getBoundingClientRect();
+		var smash2x = rect2.right;
+		var size = rect2.width;
+		if ((size+smash1x)>=smash2x&&smash2x>smash1x){
+			return 1;
+		} else {
+			return 0;
+		}
+	
+
+	}
+	function update() {
+		const s2 = isSmash(o1, o2);
+		const s3 = isSmash(o1, o3);
+		const s4 = isSmash(o1, o4);
+		const s5 = isSmash(o1, o5);
+
+		if (s2 == 1) {
+			document.querySelector("#yyy").innerText = " Sign";
+			disableScroll();
+		} else if (s3 == 1) {
+			document.querySelector("#yyy").innerText = " Gov";
+			disableScroll();
+		} else if (s4 == 1) {
+			document.querySelector("#yyy").innerText = " Private";
+			disableScroll();
+		} else if (s5 == 1) {
+			document.querySelector("#yyy").innerText = " Jaonee";
+			disableScroll();
+		} else {
+			document.querySelector("#yyy").innerText = " - ";
+		}
+	}
 	function readLandProb() {
 		signContent.style.display = "none";
-	  	landProb.style.display = "block";
-	  	
+		landProb.style.display = "block";
+
 	}
 
 	function goToSpeech1() {
 		landProb.style.display = "none";
-	  	speech1.style.display = "block";
+		speech1.style.display = "block";
 
 	}
 
 	function goToNextLoan() {
 		speech1.style.display = "none";
-	  	nextLoan.style.display = "block";
+		nextLoan.style.display = "block";
 
 	}
 
 	function goToStateBank() {
-	  	nextLoan.style.display = "none";
-	  	window.onscroll = function() {};
+		nextLoan.style.display = "none";
+		window.onscroll = function () { };
 	}
 
 
 	/* Loan */
 	function goToYesLoan() {
-	  	loanWarning.style.display = "block";
+		loanWarning.style.display = "block";
 	}
 
 	function goToNoLoan() {
 		govContent.style.display = "none";
-	  	window.onscroll = function() {};
+		window.onscroll = function () { };
 	}
 
 	function goToYesLoan2() {
-	  	loanWarning2.style.display = "block";
+		loanWarning2.style.display = "block";
 	}
 
 	function goToNoLoan2() {
 		privateContent.style.display = "none";
-	  	window.onscroll = function() {};
+		window.onscroll = function () { };
 	}
 
 	/*Lia*/
 	function readLiaProb() {
 		jaoneeContent.style.display = "none";
-	  	liaProb.style.display = "block";
-	  	
+		liaProb.style.display = "block";
+
 	}
 
 	function goTojaoneeContent2() {
 		liaProb.style.display = "none";
-	  	jaoneeContent2.style.display = "block";
-	  	
+		jaoneeContent2.style.display = "block";
+
 	}
 
 	function goTojaoneeChoice() {
 		jaoneeContent2.style.display = "none";
-	  	jaoneeChoice.style.display = "block";
-	  	
+		jaoneeChoice.style.display = "block";
+
 	}
 
 	function goToYesJaonee() {
 		jaoneeChoice.style.display = "none";
-	  	window.onscroll = function() {};	
+		window.onscroll = function () { };
 	}
 
 	function goToNoJaonee() {
-	  	jaoneeWarning.style.display = "block";
-	  	
+		jaoneeWarning.style.display = "block";
+
 	}
 
 
 
 
 </script>
+
 </html>
