@@ -137,6 +137,7 @@
 </body>
 
 <script type="text/javascript">
+	let cur = 0;
 	const o1 = document.querySelector("#farmer");
 	const o2 = document.querySelector("#sign");
 	const o3 = document.querySelector("#gov");
@@ -189,40 +190,63 @@
 	// 	document.querySelector("#farm1").innerText = smas1x+si;
 	// 	document.querySelector("#farm2").innerText = smas2x;
 
-	function isSmash(obj1, obj2) {
-		var rect1 = obj1.getBoundingClientRect();
-		var smash1x = rect1.right;
-		var rect2 = obj2.getBoundingClientRect();
-		var smash2x = rect2.right;
-		var size = rect2.width;
-		if ((size+smash1x)>=smash2x&&smash2x>smash1x){
-			return 1;
-		} else {
-			return 0;
-		}
+	// function isSmash(obj1, obj2) {
+	// 	var rect1 = obj1.getBoundingClientRect();
+	// 	var smash1x = rect1.right;
+	// 	var rect2 = obj2.getBoundingClientRect();
+	// 	var smash2x = rect2.right;
+	// 	var size = rect2.width;
+	// 	if ((size+smash1x)>=smash2x&&smash2x>smash1x){
+	// 		return 1;
+	// 	} else {
+	// 		return 0;
+	// 	}
 	
 
-	}
-	function update() {
-		const s2 = isSmash(o1, o2);
-		const s3 = isSmash(o1, o3);
-		const s4 = isSmash(o1, o4);
-		const s5 = isSmash(o1, o5);
+	// }
+	// function update() {
+	// 	const s2 = isSmash(o1, o2);
+	// 	const s3 = isSmash(o1, o3);
+	// 	const s4 = isSmash(o1, o4);
+	// 	const s5 = isSmash(o1, o5);
 
-		if (s2 == 1) {
-			document.querySelector("#yyy").innerText = " Sign";
+	// 	if (s2 == 1) {
+	// 		document.querySelector("#yyy").innerText = " Sign";
+	// 		disableScroll();
+	// 	} else if (s3 == 1) {
+	// 		document.querySelector("#yyy").innerText = " Gov";
+	// 		disableScroll();
+	// 	} else if (s4 == 1) {
+	// 		document.querySelector("#yyy").innerText = " Private";
+	// 		disableScroll();
+	// 	} else if (s5 == 1) {
+	// 		document.querySelector("#yyy").innerText = " Jaonee";
+	// 		disableScroll();
+	// 	} else {
+	// 		document.querySelector("#yyy").innerText = " - ";
+	// 	}
+	// }
+	function update() {
+		var rect1 = o1.getBoundingClientRect();
+		var rect2 = o2.getBoundingClientRect();
+		var rect3 = o3.getBoundingClientRect();
+		var rect4 = o4.getBoundingClientRect();
+		var rect5 = o5.getBoundingClientRect();
+		var smash1x = rect1.right;
+		var smash2x = rect2.left;
+		var smash3x = rect3.left;
+		var smash4x = rect4.left;
+		var smash5x = rect5.left;
+		console.log("1. "+smash1x);
+		console.log("2. "+smash2x);
+		console.log("3. "+smash3x);
+		console.log("4. "+smash4x);
+		console.log("5. "+smash5x);
+		var check = [smash2x,smash3x,smash4x,smash5x];
+		if(smash1x > check[cur]){
 			disableScroll();
-		} else if (s3 == 1) {
-			document.querySelector("#yyy").innerText = " Gov";
-			disableScroll();
-		} else if (s4 == 1) {
-			document.querySelector("#yyy").innerText = " Private";
-			disableScroll();
-		} else if (s5 == 1) {
-			document.querySelector("#yyy").innerText = " Jaonee";
-			disableScroll();
-		} else {
-			document.querySelector("#yyy").innerText = " - ";
+			cur++;
+			console.log(cur);
 		}
 	}
 	function readLandProb() {
@@ -296,10 +320,6 @@
 		jaoneeWarning.style.display = "block";
 
 	}
-
-
-
-
 </script>
 
 </html>
