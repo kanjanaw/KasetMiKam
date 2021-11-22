@@ -17,6 +17,10 @@ h3 {
 h4 {
   font-size: 3.5vw;
 }
+h5{
+  font-size: 2.3vw;
+  line-height: 100%;
+}
 p {
   font-family: "Bai Jamjuree", sans-serif;
   font-weight: 500;
@@ -43,6 +47,13 @@ button {
   text-align: center;
 }
 
+.flex-center-bottom {
+  display: flex;
+  justify-content: center;
+  align-items:flex-end;
+  text-align: center;
+}
+
 .container {
   max-width: 1920px;
   margin: 0;
@@ -54,6 +65,7 @@ button {
   width: 100%;
   height: 100vh;
   scroll-snap-align: start;
+  overflow: hidden;
 }
 
 .grid-parent,
@@ -244,7 +256,9 @@ button {
   font-weight: 600;
   -webkit-text-stroke: 2px black;
 }
-
+.bold {
+  font-weight: 600;
+}
 .thin {
   font-weight: 300;
   font-size: 6vw;
@@ -373,4 +387,106 @@ button {
   display: flex;
   justify-content: space-around;
   flex-direction: column;
+}
+.pre-solve-bg {
+  background-image: url(img/solve_bg1.JPG);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100vh;
+}
+
+.solve-bg {
+  background-image: url(img/solve_bg_2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100vh;
+}
+
+.pre-solve-title{
+  color: #FF7C33;
+  font-weight: 700;
+  -webkit-text-stroke: 2px black;
+  padding-top: 10vh;
+  padding-bottom: 5vh;
+}
+
+.wh-auto{
+  width: fit-content;
+  height: fit-content;
+}
+.p-relative{
+  position: relative;
+}
+
+.prev{
+  left:2vw;
+}
+
+.next{
+  right:0;
+}
+.slider{
+  position:relative;
+  width:100%;
+  overflow:hidden;
+}
+.slider ul{
+  position:relative;
+  width:100%;
+  margin:0;
+  padding:0;
+  height:100vh;
+  display:inline-block;
+  list-style:none;
+}
+
+
+.slider ul li{
+  position:relative;
+  float:left;
+  display:inline-block;
+  margin:0;
+  padding:0;
+  width:100vw;
+  height:100vh;
+}
+.control{
+  position: absolute;
+  top: 40%;
+  z-index: 999;
+  display: block;
+
+  cursor: pointer;
+}
+.slider p{
+  font-size: 1.15vw;
+}
+
+.p-logo{
+  position: absolute;
+  right: 0%;
+  top: -1%;
+  z-index: 999;
+  display: block;
+  cursor: pointer;
+}
+
+.link-final{
+  position: absolute;
+  z-index: 999;
+  display: block;
+  cursor: pointer;
+}
+
+footer{
+  background: #FF7C33;
+  width: 100%;
+  height: 18vh;
+  position: absolute;
+  z-index: auto;
+  bottom: 0;
 }
