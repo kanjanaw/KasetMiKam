@@ -95,7 +95,7 @@ h3 {
   font-size: 6vw;
 }
 h4 {
-  font-size: 3vw;
+  font-size: 2.5vw;
 }
 h5{
 	font-size: 2vw;
@@ -172,7 +172,17 @@ button{
 	margin-top: 30%;
 	margin-left: -37%;
   }
-
+#jaonee-content:before,#jaonee-content2:before,#chemi-choice:before,#naitoon-choice:before{
+	margin-left: 27%;
+}
+#chemi-warning:before{
+	margin-left: 27%;
+	margin-top: 20%;
+}
+#naitoon-conver1:before{
+	margin-left: 27%;
+	margin-top: 40%;
+}
 .text-center {
  	text-align: center;
 }
