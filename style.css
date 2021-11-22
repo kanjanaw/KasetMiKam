@@ -84,27 +84,49 @@ h3 {
   font-size: 6vw;
 }
 h4 {
-  font-size: 3.5vw;
+  font-size: 3vw;
 }
-p {
+h5{
+	font-size: 2vw;
+}
+p, li {
   font-family: "Bai Jamjuree", sans-serif;
   font-weight: 500;
   line-height: 160%;
   font-size: 1.2vw;
 }
-button {
-  height: fit-content;
-  width: fit-content;
-  color: black;
-  background: hsla(22, 100%, 60%, 1);
-  border-radius: 15px;
-  padding: 0.5vh 1.2vw;
-  border: none;
-  font-size: 1.5vw;
-  font-weight: 500;
-  font-family: "Mitr", sans-serif;
-  cursor: pointer;
-}
+
+button{
+	background: hsla(22, 100%, 60%, 1);
+	font-size: 1.5vw;
+	font-weight: 500;
+	font-family: "Mitr", sans-serif;
+	letter-spacing: 2px;
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #000;
+	cursor: pointer;
+	border: 3px solid;
+	padding: 0.25em 0.5em;
+	box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
+	position: relative;
+	user-select: none;
+	-webkit-user-select: none;
+	touch-action: manipulation;
+  }
+  
+  button:active {
+	box-shadow: 0px 0px 0px 0px;
+	top: 5px;
+	left: 5px;
+  }
+  
+  @media (min-width: 768px) {
+	button{
+	  padding: 0.25em 0.75em;
+	}
+  }
+
 .flex-center {
   display: flex;
   justify-content: center;
@@ -121,15 +143,30 @@ button {
 	padding: 3.5vh 3.3vw;
 	position: absolute;
 	margin:auto;
-	top: -20vh;
+	top: -25vh;
 	bottom: 0;
 	right: 0;
-	box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
 }
+
+.block-text:before{
+	z-index:-1;
+	content: "";
+	width: 0.5vw;
+	height: 0.5vh;
+	position: absolute;
+	border-left: 10vw ;
+	border-right: 4vw solid transparent;
+	border-top: 8vh solid #fff6c2;
+	border-bottom: 0vh solid transparent;
+	margin-top: 30%;
+	margin-left: -37%;
+  }
 
 .text-center {
  	text-align: center;
 }
+
+
 
 .content{
 	height: 100vh;
@@ -141,25 +178,16 @@ button {
 	text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 }
 
-#sign-btn{
-	box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
-}
-
 #land-prob{
 	display: none;
 	right: -10vw;
 	top: -25vh;
-	cursor: pointer;
+
 }
 
-#speech1, #jaonee-content2, #jaonee-choice{
-	display: none;
-	cursor: pointer;
-}
-
-#next-loan{
-	top: 0;
-	right: 5vw;
+#speech1, #jaonee-content2, #jaonee-choice, 
+#chemi-prob, #chemi-warning,
+ #naitoon-conver2, #naitoon-choice, #naitoon-warning, #naitoon-prob{
 	display: none;
 }
 
@@ -178,4 +206,9 @@ button {
 	right: -10vw;
 	top: -25vh;
 	cursor: pointer;
+}
+
+#chemi-prob h4{
+	line-height: 1vh;
+	display: inline;
 }

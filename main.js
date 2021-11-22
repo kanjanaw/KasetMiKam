@@ -17,7 +17,7 @@ $(window).scroll(function () {
     wh = $(window).height();
   value = (scroll / (dh - wh)) * 100;
 
-  $("#wrapper").css("left", -value * 6 + "%");
+  $("#wrapper").css("left", -value * 8 + "%");
 });
 
 window.onscroll = function () {
