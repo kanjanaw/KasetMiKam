@@ -233,3 +233,22 @@ button{
 	line-height: 1vh;
 	display: inline;
 }
+
+#turn{
+	position: fixed;
+	left: 10vw;
+	width: 1vw;
+	height: 1vh;
+}
+
+@media (orientation: landscape) {
+	#turn { display:none;}
+ 	#all { display:block;}
+
+}
+@media (orientation: portrait) {
+	#turn { display:block;}
+	#all { display:none; }
+
+
+}

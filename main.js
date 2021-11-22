@@ -8,9 +8,9 @@ function disableScroll() {
     });
 }
 
- 
+
 function enableScroll() {
-  window.onscroll = function () {}
+  window.onscroll = function () { }
 }
 $(window).scroll(function () {
   var scroll = $(window).scrollTop(),
@@ -18,7 +18,7 @@ $(window).scroll(function () {
     wh = $(window).height();
   value = (scroll / (dh - wh)) * 100;
   $("#wrapper").css("left", -value * 8 + "%");
-  if ((value*8)>=750){
+  if ((value * 8) >= 750) {
     document.getElementById("farmer").src = "img/gif3.gif";
   }
 });
@@ -29,4 +29,5 @@ window.onscroll = function () {
   document.body.style.setProperty("--scrollY", scrollY);
 
 };
+
 
