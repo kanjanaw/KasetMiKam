@@ -134,7 +134,7 @@ button{
   text-align: center;
 }
 
-.block-text {
+.block-text ,.block-text2{
 	background: #fff6c2;
 	height: fit-content;
 	width: fit-content;
