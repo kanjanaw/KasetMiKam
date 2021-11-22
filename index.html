@@ -27,7 +27,7 @@
           <h2 class="title mp-0">เกษตร</h2>
           <h2 class="title mp-0"><span class="thin">(มี) </span>กรรม</h2>
           <br />
-          <a class="next-page" onclick="nextparallex()">คลิกเพื่อไปต่อ</a>
+          <a class="next-page animate-flicker" onclick="nextparallex()">L o a d i n g . . . </a>
         </div>
       </div>
     </div>
@@ -159,7 +159,7 @@
                 ตามไปดูปัญหา<br />
                 ที่เกษตรกรชาวไทยต้องเผชิญกันดีกว่า
               </p>
-              <button onclick="document.location='index.html'" style="margin-bottom: 2.5vh">เริ่ม</button>
+              <button onclick="document.location='minigame.html'" style="margin-bottom: 2.5vh">เริ่ม</button>
             </div>
           </div>
         </div>
@@ -173,15 +173,11 @@
     $(window).load(function () {
       $("#parallex").hide();
       $("#loader")
-        .delay(5000)
+        .delay(6000)
         .fadeOut("slow", function () {
           $("#parallex").show();
         });
     });
-    function nextparallex() {
-      document
-        .getElementById("parallex")
-        .scrollIntoView({ behavior: "smooth" });
-    }
+   
   </script>
 </html>

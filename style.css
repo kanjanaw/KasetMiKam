@@ -274,9 +274,15 @@ button {
   text-shadow: 3px 3px 10px black;
   text-decoration: none;
   color: white;
-  cursor: pointer;
+
+}
+@keyframes fadeIn { 
+  from { opacity: 0; } 
 }
 
+.animate-flicker {
+    animation: fadeIn .5s infinite alternate;
+}
 .logo {
   width: 6%;
   position: absolute;
