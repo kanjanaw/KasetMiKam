@@ -67,6 +67,27 @@ body {
   	transform: rotateY(180deg);
 }
 
+#farmer-fall{
+	width: 55vh;
+	margin:auto;
+	position: fixed;
+  	bottom: 0;
+  	left: 0;
+  	right: 0;
+  	display: none;
+  	transform: rotateY(180deg);
+}
+#farmer-end{
+	width: 40vh;
+	margin:auto;
+	position: fixed;
+  	bottom: 0;
+  	left: 0;
+  	right: 0;
+  	display: none;
+  	transform: rotateY(180deg);
+}
+
 .inline-block-center{
 	display: inline-block;
 	justify-content: center;
