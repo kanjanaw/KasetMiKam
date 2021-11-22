@@ -19,10 +19,16 @@ $(window).scroll(function () {
   value = (scroll / (dh - wh)) * 100;
   $("#wrapper").css("left", -value * 8 + "%");
   if ((value*8)>=750){
-    document.getElementById("farmer").src = "img/gif3.gif";
+    character.style.display = "none";
+    characterStop.style.display = "none";
+    characterFall.style.display = "block";
+    setTimeout(end, 2600);
   }
 });
-
+function end(){
+  characterFall.style.display = "none";
+  characterEnd.style.display = "block";
+}
 window.onscroll = function () {
   let scrollY = window.scrollY;
   let viewHeight = window.innerHeight;
