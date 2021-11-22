@@ -24,6 +24,7 @@
 		<!-- Farmer -->
 		<div class="game-frame">
 			<img id="farmer" src="img/farmer2.gif">
+			<img id="farmer-stop" src="img/pause.png">
 		</div>
 		<div class="section">
 
@@ -213,6 +214,9 @@
 	const o6 = document.getElementById("chemi");
 	const o7 = document.getElementById("naitoon");
 
+	const character = document.querySelector("#farmer")
+	const characterStop = document.querySelector("#farmer-stop")
+
 	const signContent = document.querySelector("#sign-content");
 	const signBtn = document.querySelector("#sign-btn");
 	const landProb = document.querySelector("#land-prob");
@@ -315,6 +319,8 @@
 
 	function enableScroll() {
 		window.onscroll = function () {}
+		character.style.display = "block";
+		characterStop.style.display = "none";
 	}
 
 	// function update() {
@@ -364,6 +370,8 @@
 		var check = [smash2x,smash3x,smash4x,smash5x,smash6x,smash7x];
 		if(smash1x > check[cur]){
 			disableScroll();
+			character.style.display = "none";
+			characterStop.style.display = "block";
 			cur++;
 			console.log(cur);
 		}

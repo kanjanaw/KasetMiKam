@@ -56,6 +56,17 @@ body {
   	transform: rotateY(180deg);
  }
 
+ #farmer-stop{
+	width: 30vh;
+	margin:auto;
+	position: fixed;
+  	bottom: 0;
+  	left: 0;
+  	right: 0;
+  	display: none;
+  	transform: rotateY(180deg);
+}
+
 .inline-block-center{
 	display: inline-block;
 	justify-content: center;
