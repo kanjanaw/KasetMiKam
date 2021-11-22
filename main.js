@@ -8,6 +8,7 @@ function disableScroll() {
     });
 }
 
+ 
 function enableScroll() {
   window.onscroll = function () {}
 }
@@ -16,13 +17,16 @@ $(window).scroll(function () {
     dh = $(document).height(),
     wh = $(window).height();
   value = (scroll / (dh - wh)) * 100;
-
   $("#wrapper").css("left", -value * 8 + "%");
+  if ((value*8)>=750){
+    document.getElementById("farmer").src = "img/gif3.gif";
+  }
 });
 
 window.onscroll = function () {
   let scrollY = window.scrollY;
   let viewHeight = window.innerHeight;
   document.body.style.setProperty("--scrollY", scrollY);
+
 };
 
