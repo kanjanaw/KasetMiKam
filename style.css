@@ -98,13 +98,6 @@ body {
 	width: 20vh;
 }
 
-#post {
-	font-size: 2em;
-	position: fixed;
-	top: 0;
-	right: 0;
-	background: tranparent;
-}
 
 h1 {
   font-size: 9vw;
@@ -260,6 +253,10 @@ button{
 	left: 10vw;
 	width: 1vw;
 	height: 1vh;
+}
+
+#go-solution{
+	right: -70vw;
 }
 
 @media (orientation: landscape) {

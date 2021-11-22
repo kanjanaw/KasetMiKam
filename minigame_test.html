@@ -34,6 +34,7 @@
 				<img id="farmer-stop" src="img/pause.png">
 				<img id="farmer-fall" src="img/fall_farmer.gif">
 				<img id="farmer-end" src="img/gif3.gif">
+				
 			</div>
 			<div class="section">
 
@@ -207,26 +208,13 @@
 				</div>
 			</div>
 			<div class="section">
-
+				<div class="block-text text-center" id="go-solution" style="padding: 1vh 5vw">
+					<p>ด้วยเหตุผลเหล่านี้ทำให้เกษตรกรไทยยังติดอยู่กับความยากจนต่อไป <br>อยากช่วยกันแก้ไขไหม</p>
+					<div class="text-center" style="padding: 1vh 5vw">
+						<button id="go-solution-btn" style="margin-bottom: 2.5vh">แนวทางแก้ไขปัญหา</button><br>&nbsp
+					</div>
+				</div>
 			</div>
-
-		</div>
-
-
-
-
-
-		<!-- Content 
-	<div class="content">
-		
-	</div>
-	-->
-
-
-		<div id="post">
-			Collision is <span id="yyy"></span>
-			farmer is <span id="farm"></span>
-			farmer2 is <span id="farm2"></span>
 		</div>
 
 	</div>
@@ -247,6 +235,7 @@
 	const characterStop = document.querySelector("#farmer-stop")
 	const characterFall = document.querySelector("#farmer-fall")
 	const characterEnd = document.querySelector("#farmer-end")
+	const goSolution = document.querySelector("#go-solution")
 
 	const signContent = document.querySelector("#sign-content");
 	const signBtn = document.querySelector("#sign-btn");
@@ -328,14 +317,6 @@
 	naitoonWarnYesBtn.addEventListener("click", goToNaitoonProb2);
 	naitoonNextBtn.addEventListener("click", goToTheEnd);
 
-	// var re1 = o1.getBoundingClientRect();
-	// 	var smas1x = re1.right;
-	// 	var re2 = o2.getBoundingClientRect();
-	// 	var smas2x = re2.right;
-	// 	var si = re2.width;
-	// 	document.querySelector("#farm1").innerText = smas1x+si;
-	// 	document.querySelector("#farm2").innerText = smas2x;
-
 	function isSmash(obj1, obj2) {
 		var rect1 = obj1.getBoundingClientRect();
 		var smash1x = rect1.right;
@@ -355,28 +336,6 @@
 		characterStop.style.display = "none";
 	}
 
-	// function update() {
-	// 	const s2 = isSmash(o1, o2);
-	// 	const s3 = isSmash(o1, o3);
-	// 	const s4 = isSmash(o1, o4);
-	// 	const s5 = isSmash(o1, o5);
-
-	// 	if (s2 == 1) {
-	// 		document.querySelector("#yyy").innerText = " Sign";
-	// 		disableScroll();
-	// 	} else if (s3 == 1) {
-	// 		document.querySelector("#yyy").innerText = " Gov";
-	// 		disableScroll();
-	// 	} else if (s4 == 1) {
-	// 		document.querySelector("#yyy").innerText = " Private";
-	// 		disableScroll();
-	// 	} else if (s5 == 1) {
-	// 		document.querySelector("#yyy").innerText = " Jaonee";
-	// 		disableScroll();
-	// 	} else {
-	// 		document.querySelector("#yyy").innerText = " - ";
-	// 	}
-	// }
 	function update() {
 		var rect1 = o1.getBoundingClientRect();
 		var rect2 = o2.getBoundingClientRect();
@@ -392,13 +351,6 @@
 		var smash5x = rect5.left;
 		var smash6x = rect6.left;
 		var smash7x = rect7.left;
-		console.log("1. " + smash1x);
-		console.log("2. " + smash2x);
-		console.log("3. " + smash3x);
-		console.log("4. " + smash4x);
-		console.log("5. " + smash5x);
-		console.log("6. " + smash5x);
-		console.log("7. " + smash5x);
 		var check = [smash2x, smash3x, smash4x, smash5x, smash6x, smash7x];
 
 		if (smash1x > check[cur]) {
