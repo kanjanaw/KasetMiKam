@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>เกษตร(มี)กรรม</title>
+    <link rel="stylesheet" media="screen and (min-width: 900px)" type="text/css" href="widestyle.css" />
+    <link rel="stylesheet" media="screen and (max-width: 900px)" type="text/css" href="smallstyle.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Mitr:wght@200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  </head>
+  <body>
+    <div class="container first-bg flex-center" id="loader">
+      <a href="index.html" >
+        <img
+          src="img/logo_kaset-01.png"
+          alt="" class="logo"
+        /></a>
+    
+      <div class="flex-center" style="margin: 5rem">
+        <div class="text-wrap-load">
+          <img class="mb-0 index-gif-run" src="img/gif-run.gif" />
+          <h2 class="title mp-0">เกษตร</h2>
+          <h2 class="title mp-0"><span class="thin">(มี) </span>กรรม</h2>
+          <br />
+          <a class="next-page animate-flicker" onclick="nextparallex()">L o a d i n g . . . </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="container third-bg" id="parallex">
+
+      <!-- section 1 -->
+      <div class="fullscreen">
+        <div
+          class="flex-center index text-center"
+          id="parallexText"
+          style="flex-direction: column"
+        >
+          <h2 class="title mp-0 hide">เกษตรกรไทย</h2>
+          <h3 class="title mb-8 hide-w">เกษตรกรไทย</h3>
+          <img src="img/gif1.gif"  class="sec1-img hide"/>
+          <div class="text-wrap-1">
+            <p class="block-text">
+              มีจำนวนมากถึง 14% จากประชากรทั้งหมด นับเป็นอาชีพที่สร้างรายได้<br class="hide"/>
+              หลักให้แก่ประเทศ จนได้ชื่อว่าเป็น “ กระดูกสันหลังของชาติ ”
+            </p>
+          </div>
+          <img src="img/gif1.gif" class="sec1-img hide-w"/>
+        </div>
+
+        <a href="index.html" >
+          <img
+            src="img/logo_kaset-02.png"
+            alt="" class="logo"
+          /></a>
+      </div>
+
+      <!-- section 2 -->
+      <div class="fullscreen">
+        <div
+          class="flex-center index"
+          style="flex-direction: column; overflow: hidden"
+          id="parallexText2"
+        >
+          <h4 class="regular">แต่ทำไม</h4>
+          <h2 class="title mp-0">ยิ่งทำ</h2>
+          <div class="mt-4" style="display: flex; justify-content: center">
+            <div class="text-wrap-1">
+              <p class="block-text text-left">
+                ทั้งปลูกพืชและเพาะเลี้ยงสัตว์บก<br class="hide"/>
+                และสัตว์น้ำทำทั้งสองอย่าง<br class="hide"/>
+                หรือทำไร่นาสวนผสม
+              </p>
+            </div>
+            
+            <img
+              src="img/gif2.gif"
+              alt=""
+          class="sec2-img hide"
+            />
+          </div>
+
+          <img
+              src="img/gif2.gif"
+              alt=""
+          class="sec2-img hide-w"
+            />
+
+          <img
+            src="img/paralax 2.png"
+            alt=""
+            width="33%"
+            class="index hide"
+            style="margin-top: -20vh; margin-right: -92vw"
+          />
+        </div>
+      </div>
+
+      <!-- section 3 -->
+      <div class="fullscreen flex-center">
+        <div
+          class="flex-center index"
+          style="flex-direction: column; overflow: hidden"
+          id="parallexText3"
+        >
+          <h2 class="title hide" style="margin-bottom: 7vh">ยิ่งจน</h2>
+          <h2 class="title hide-w" style="margin-bottom: 5vh">ยิ่งจน</h2>
+          <div class="text-wrap-1">
+            <div class="block-text" style="padding: 2vh 7vw">
+              <p class="text-left-s">
+                เมื่อแบ่งระดับสภาวะทางการเงินของเกษตรกร<br class="hide"/>
+                พบว่าเกษตรกรไทยอยู่ในสภาวะ
+              </p>
+              <div class="flex-center" style="margin: 3vw 0rem">
+                <img
+                  src="img/graph 1.png"
+                  class="index sec3-img"
+                />
+                <div class="text-graph">
+                  <p class="mp-0 text-pg" id="pg1">จนมากถึง 21%</p>
+                  <p class="mp-0 text-pg" id="pg2">จนน้อย 8%</p>
+                  <p class="mp-0 text-pg" id="pg3">จนเกือบจน 9%</p>
+                </div>
+              </div>
+              <p class="">ที่เหลืออยู่ในสภาวะสุ่มเสี่ยงต่อความยากจน</p>
+            </div>
+          </div>
+       
+        </div>
+        <img
+          src="img/paralax 2.png"
+          alt=""
+          width="36%"
+          class="index hide"
+          style="margin-left: -46vw"
+        />
+        <img
+          src="img/gif3.gif"
+          alt=""
+          class="index sec3-img2 hide"
+        />
+        <img
+          src="img/gif3.gif"
+          alt=""
+          class="index sec3-img2 hide-w"
+        />
+      </div>
+
+      <!-- section 4 -->
+      <div class="fullscreen">
+        <div
+          class="flex-center index text-center"
+          id="parallexText"
+          style="flex-direction: column"
+        >
+          <h2 class="title mp-0">ทำไม</h2>
+          <h3 class="title2 mp-0">ถึงเป็นเช่นนั้น</h3>
+          <div
+            class="mt-2"
+            style="
+              display: flex;
+              justify-content: center;
+              flex-direction: column;
+            "
+          >
+            <div class="block-text text-center" style="padding: 1vh 5vw">
+              <p>
+                ตามไปดูปัญหา<br />
+                ที่เกษตรกรชาวไทยต้องเผชิญกันดีกว่า
+              </p>
+              <button class="btn-orange" onclick="document.location='minigame.html'" style="margin-bottom: 2.5vh">เริ่ม</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+	  
+    </div>
+  </body>
+
+  <script>
+    $(window).load(function () {
+      $("#parallex").hide();
+      $("#loader")
+        .delay(6000)
+        .fadeOut("slow", function () {
+          $("#parallex").show();
+        });
+    });
+   
+  </script>
+</html>

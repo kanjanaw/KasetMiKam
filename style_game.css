@@ -1,0 +1,272 @@
+* {
+	font-family: "IBM Plex Sans Thai Looped", sans-serif;
+	font-family: "Mitr", sans-serif;
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	overflow-x: hidden;
+	background: url(img/BG_GAME.GIF) no-repeat center center fixed;
+	background-size: cover;
+	height: 1000vh;
+}
+
+.wrapper {
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 4000vw;
+	display: flex;
+	height: 100vh;
+}
+
+.section{
+	position: relative;
+	width: 100vw;
+	height: 100vh;
+	box-sizing: border-box;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.box {
+	width: 40vh;
+	bottom: 0;
+	right: 0;
+	position: absolute;
+}
+
+.game-frame{
+	height: 100vh;
+	margin: 0;
+	padding: 0;
+}
+
+#farmer{
+	width: 30vh;
+	margin:auto;
+	position: fixed;
+  	bottom: 0;
+  	left: 0;
+  	right: 0;
+  	display: block;
+  	transform: rotateY(180deg);
+ }
+
+ #farmer-stop{
+	width: 30vh;
+	margin:auto;
+	position: fixed;
+  	bottom: 0;
+  	left: 0;
+  	right: 0;
+  	display: none;
+  	transform: rotateY(180deg);
+}
+
+#farmer-fall{
+	width: 55vh;
+	margin:auto;
+	position: fixed;
+  	bottom: 0;
+  	left: 0;
+  	right: 0;
+  	display: none;
+  	transform: rotateY(180deg);
+}
+#farmer-end{
+	width: 40vh;
+	margin:auto;
+	position: fixed;
+  	bottom: 0;
+  	left: 0;
+  	right: 0;
+  	display: none;
+  	transform: rotateY(180deg);
+}
+
+.inline-block-center{
+	display: inline-block;
+	justify-content: center;
+	align-items:center ;
+}
+
+#jaonee, #chemi, #naitoon{
+	width: 20vh;
+}
+
+
+h1 {
+  font-size: 9vw;
+}
+h2 {
+  font-size: 8vw;
+}
+h3 {
+  font-size: 6vw;
+}
+h4 {
+  font-size: 2.5vw;
+}
+h5{
+	font-size: 2vw;
+}
+p, li {
+  font-family: "Bai Jamjuree", sans-serif;
+  font-weight: 500;
+  line-height: 160%;
+  font-size: 1.2vw;
+}
+
+button{
+	background: hsla(22, 100%, 60%, 1);
+	font-size: 1.5vw;
+	font-weight: 500;
+	font-family: "Mitr", sans-serif;
+	letter-spacing: 2px;
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #000;
+	cursor: pointer;
+	border: 3px solid;
+	padding: 0.25em 0.5em;
+	box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
+	position: relative;
+	user-select: none;
+	-webkit-user-select: none;
+	touch-action: manipulation;
+  }
+  
+  button:active {
+	box-shadow: 0px 0px 0px 0px;
+	top: 5px;
+	left: 5px;
+  }
+  
+  @media (min-width: 768px) {
+	button{
+	  padding: 0.25em 0.75em;
+	}
+  }
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.block-text ,.block-text2{
+	background: #fff6c2;
+	height: fit-content;
+	width: fit-content;
+	color: black;
+	border-radius: 25px;
+	padding: 3.5vh 3.3vw;
+	position: absolute;
+	margin:auto;
+	top: -25vh;
+	bottom: 0;
+	right: 0;
+}
+
+.block-text:before{
+	z-index:-1;
+	content: "";
+	width: 0.5vw;
+	height: 0.5vh;
+	position: absolute;
+	border-left: 10vw ;
+	border-right: 4vw solid transparent;
+	border-top: 8vh solid #fff6c2;
+	border-bottom: 0vh solid transparent;
+	margin-top: 30%;
+	margin-left: -37%;
+  }
+#jaonee-content:before,#jaonee-content2:before,#chemi-choice:before,#naitoon-choice:before{
+	margin-left: 27%;
+}
+#chemi-warning:before{
+	margin-left: 27%;
+	margin-top: 20%;
+}
+#naitoon-conver1:before{
+	margin-left: 27%;
+	margin-top: 40%;
+}
+.text-center {
+ 	text-align: center;
+}
+
+
+
+.content{
+	height: 100vh;
+	margin: 0;
+	padding: 0;
+}
+
+#sign-next:hover{
+	text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+#land-prob{
+	display: none;
+	right: -10vw;
+	top: -25vh;
+
+}
+
+#speech1, #jaonee-content2, #jaonee-choice, 
+#chemi-prob, #chemi-warning,
+ #naitoon-conver2, #naitoon-choice, #naitoon-warning, #naitoon-prob{
+	display: none;
+}
+
+#next-loan-btn{
+	cursor: pointer;
+}
+
+#loan-warning, #loan-warning2, #jaonee-warning{
+	font-weight: bold;
+	color: darkred;
+	display: none;
+}
+
+#lia-prob{
+	display: none;
+	right: -10vw;
+	top: -25vh;
+	cursor: pointer;
+}
+
+#chemi-prob h4{
+	line-height: 1vh;
+	display: inline;
+}
+
+#turn{
+	position: fixed;
+	left: 10vw;
+	width: 1vw;
+	height: 1vh;
+}
+
+#go-solution{
+	right: -70vw;
+}
+
+@media (orientation: landscape) {
+	#turn { display:none;}
+ 	#all { display:block;}
+
+}
+@media (orientation: portrait) {
+	#turn { display:block;}
+	#all { display:none; }
+
+
+}
