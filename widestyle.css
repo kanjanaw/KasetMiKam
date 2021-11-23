@@ -479,6 +479,7 @@ button {
   z-index: 999;
   display: block;
   cursor: pointer;
+  width: 7%;
 }
 
 .link-final{
@@ -521,4 +522,13 @@ footer button{
 
 .text-wrap{
   width: 40vw;
+}
+
+.pre-solve-img{
+  margin-left: -2vw;
+  width: 60%;
+}
+
+.pre-solve-btn{
+  padding: 0.6vw 2vw; font-size: 2.25vw; margin-top: -5vh
 }
