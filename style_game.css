@@ -8,7 +8,7 @@ body {
 	margin: 0;
 	padding: 0;
 	overflow-x: hidden;
-	background: url(img/bg_test.png) no-repeat center center fixed;
+	background: url(img/BG_GAME.GIF) no-repeat center center fixed;
 	background-size: cover;
 	height: 1000vh;
 }
