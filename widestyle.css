@@ -496,3 +496,29 @@ footer{
   z-index: auto;
   bottom: 0;
 }
+
+
+footer p{
+  text-align: left; color: black; font-size: 1vw; margin: 0vh 2.5vw;
+}
+
+.logo-cr{
+  margin: 0vh .7vw;
+  width: 4.5%;
+}
+
+footer button{
+  margin-left: 2vw;  color: white; font-weight: 400; padding: .8vh 3.5vw; border: 3.5px solid white;
+}
+
+.btn-back-orange{
+  margin: 5vh 2vw; color: white; font-weight: 400; padding: 1vh 4vw;
+}
+
+.b-footer{
+  flex-direction: column; height: 82vh;
+}
+
+.text-wrap{
+  width: 40vw;
+}
