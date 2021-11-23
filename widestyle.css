@@ -557,3 +557,12 @@ footer button{
 .sec3-img2{
   width: 23%;margin-left: -21vw; margin-top: 28vh;
 }
+
+.solve-img1{
+  width: 33%;
+  left: 50vw; bottom: -20vh
+}
+
+.b-15vh{
+  bottom: 15vh;
+}

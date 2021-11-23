@@ -18,7 +18,11 @@ h4 {
   font-size: 12vw;
 }
 h5 {
-  font-size: 2.3vw;
+  font-size: 6vw;
+  line-height: 110%;
+}
+h6 {
+  font-size: 10vw;
   line-height: 100%;
 }
 p {
@@ -252,6 +256,12 @@ button {
   -webkit-text-stroke: 2px black;
   line-height: 80%;
 }
+.title-s {
+  font-weight: 700;
+  -webkit-text-stroke: 2px black;
+  line-height: 120%;
+  font-size: 15vw;
+}
 .title2 {
   font-weight: 600;
   -webkit-text-stroke: 2px black;
@@ -408,8 +418,8 @@ button {
 .solve-bg {
   background-image: url(img/solve_bg_2.jpg);
   background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+  background-size: 500%;
+  background-position: center bottom;
   width: 100%;
   height: 100vh;
 }
@@ -463,20 +473,21 @@ button {
 }
 .control {
   position: absolute;
-  top: 40%;
+  bottom: 4%;
   z-index: 999;
   display: block;
 
   cursor: pointer;
 }
 .slider p {
-  font-size: 1.15vw;
+  font-size: 3.5vw;
 }
 
 .p-logo {
   position: absolute;
-  right: 0%;
-  top: -1%;
+  width: 13%;
+  right: 1%;
+  top: .5%;
   z-index: 999;
   display: block;
   cursor: pointer;
@@ -485,6 +496,8 @@ button {
 .link-final {
   position: absolute;
   z-index: 999;
+  left: 28%;
+  bottom: -5%;
   display: block;
   cursor: pointer;
 }
@@ -574,7 +587,9 @@ footer button {
  margin-top: 43vh;
 }
 
-
+.solve-img1{
+  width: 80%;
+}
 
 
 
@@ -603,4 +618,13 @@ span {
 }
 .btn-orange {
   padding: 1vh 6vw;
+}
+.t-orange{
+  color: #ff7c33;
+}
+.b-15vh{
+  bottom: 5vh;
+}
+.b-8vh{
+  bottom: -4vh;
 }
