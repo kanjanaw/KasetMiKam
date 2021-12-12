@@ -45,6 +45,21 @@ body {
 	padding: 0;
 }
 
+#skip{
+	width: 10vh;
+	margin:auto;
+	position: fixed;
+  	top: 0;
+  	right: 0;
+	z-index: 10;
+  	display: block;
+	cursor: pointer;
+}
+
+#skip:hover{
+	transform: rotateY(30deg);
+}
+
 #farmer{
 	width: 30vh;
 	margin:auto;
