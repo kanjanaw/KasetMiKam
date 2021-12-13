@@ -46,8 +46,8 @@ body {
 }
 
 #skip{
-	width: 10vh;
-	margin:auto;
+	width: 15vh;
+	margin: 0.5em;
 	position: fixed;
   	top: 0;
   	right: 0;
