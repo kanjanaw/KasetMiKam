@@ -400,13 +400,13 @@
 	function readLandProb() {
 		signContent.style.display = "none";
 		landProb.style.display = "block";
-
+		signContent.remove();
 	}
 
 	function goToSpeech1() {
 		landProb.style.display = "none";
 		speech1.style.display = "block";
-
+		signContent.remove();
 	}
 
 	function goToStateBank() {		
@@ -420,7 +420,7 @@
 	function goToYesLoan() {
 		govContent.style.display = "none";
 		loanWarning.style.display = "block";
-
+		govContent.remove();
 	}
 
 	function goToNoLoan() {
@@ -432,17 +432,19 @@
 	function goToNoWarnLoan() {
 		loanWarning.style.display = "none";
 		enableScroll();
-		
+		govContent.remove();
 	}
 
 	function goToYesLoan2() {
 		privateContent.style.display = "none";
 		loanWarning2.style.display = "block";
+		govContent.remove();
 	}
 
 	function goToNoLoan2() {
 		privateContent.style.display = "none";
 		enableScroll();
+		privateContent.remove();
 	}
 
 	function goToNoWarnLoan2() {
@@ -457,28 +459,32 @@
 	function goTojaoneeChoice() {
 		jaoneeContent2.style.display = "none";
 		jaoneeChoice.style.display = "block";
-
+		jaoneeContent.remove();
 	}
 
 	function goToYesJaonee() {
 		jaoneeContent.style.display = "none";
 		jaoneeContent2.style.display = "block";
+		jaoneeContent.remove();
 	}
 
 	function goToNoJaonee() {
 		jaoneeContent.style.display = "none";
 		jaoneeWarning.style.display = "block";
+		jaoneeContent.remove();
 
 	}
 
 	function readLiaProb() {
 		jaoneeContent2.style.display = "none";
 		liaProb.style.display = "block";
+		jaoneeContent.remove();
 	}
 
 	function goTojaoneeContent2() {
 		jaoneeWarning.style.display = "none";
 		jaoneeContent2.style.display = "block";
+		jaoneeContent.remove();
 	}
 
 	function goToChemi() {
@@ -492,16 +498,19 @@
 	function goToChemiProb() {
 		chemiChoice.style.display = "none";
 		chemiProb.style.display = "block";
+		chemiChoice.remove();
 	}
 
 	function goToChemiWarn() {
 		chemiChoice.style.display = "none";
 		chemiWarn.style.display = "block";
+		chemiChoice.remove();
 	}
 
 	function goToChemiProb2() {
 		chemiWarn.style.display = "none";
 		chemiProb.style.display = "block";
+		chemiChoice.remove();
 	}
 
 	function goToNaitoon() {
@@ -514,26 +523,31 @@
 	function goToConver2() {
 		naitoonConver1.style.display = "none";
 		naitoonConver2.style.display = "block";
+		naitoonConver1.remove();
 	}
 
 	function goToNaitoonChoice() {
 		naitoonConver2.style.display = "none";
 		naitoonChoice.style.display = "block";
+		naitoonConver1.remove();
 	}
 
 	function goToNaitoonProb() {
 		naitoonChoice.style.display = "none";
 		naitoonProb.style.display = "block";
+		naitoonConver1.remove();
 	}
 
 	function goToNaitoonWarn() {
 		naitoonChoice.style.display = "none";
 		naitoonWarn.style.display = "block";
+		naitoonConver1.remove();
 	}
 
 	function goToNaitoonProb2() {
 		naitoonWarn.style.display = "none";
 		naitoonProb.style.display = "block";
+		naitoonConver1.remove();
 	}
 
 	function goToTheEnd() {
