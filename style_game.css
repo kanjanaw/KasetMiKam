@@ -285,3 +285,8 @@ button{
 
 
 }
+
+
+#sign-content, #gov-content, #private-content, #jaonee-content, #naitoon-conver1, #chemi-choice, #go-solution{
+	display: none;
+}

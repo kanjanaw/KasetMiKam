@@ -368,6 +368,25 @@
 
 		}
 
+		if (cur == 1) {
+			signContent.style.display = "block";
+		}
+		if (cur == 2) {
+			govContent.style.display = "block";
+		}
+		if (cur == 3) {
+			privateContent.style.display = "block";
+		}
+		if (cur == 4) {
+			jaoneeContent.style.display = "block";
+		}
+		if (cur == 5) {
+			chemiChoice.style.display = "block";
+		}
+		if (cur == 6) {
+			naitoonConver1.style.display = "block";
+		}
+
 	}
 
 
@@ -390,9 +409,10 @@
 
 	}
 
-	function goToStateBank() {
+	function goToStateBank() {		
 		speech1.style.display = "none";
 		enableScroll();
+		signContent.remove();
 	}
 
 
@@ -406,11 +426,13 @@
 	function goToNoLoan() {
 		govContent.style.display = "none";
 		enableScroll();
+		govContent.remove();
 	}
 
 	function goToNoWarnLoan() {
 		loanWarning.style.display = "none";
 		enableScroll();
+		
 	}
 
 	function goToYesLoan2() {
@@ -426,6 +448,7 @@
 	function goToNoWarnLoan2() {
 		loanWarning2.style.display = "none";
 		enableScroll();
+		privateContent.remove();
 	}
 
 	/*Lia*/
@@ -461,6 +484,7 @@
 	function goToChemi() {
 		liaProb.style.display = "none";
 		enableScroll();
+		jaoneeContent.remove();
 	}
 
 	/* Chemi */
@@ -483,6 +507,7 @@
 	function goToNaitoon() {
 		chemiProb.style.display = "none";
 		enableScroll();
+		chemiChoice.remove();
 	}
 
 	/* Naitoon */
@@ -514,6 +539,7 @@
 	function goToTheEnd() {
 		naitoonProb.style.display = "none";
 		enableScroll();
+		naitoonConver1.remove();
 	}
 
 </script>
