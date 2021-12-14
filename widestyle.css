@@ -515,9 +515,18 @@ footer p{
   width: 4.5%;
 }
 
+.logo-cr-kaset{
+  width: 7%;
+}
+
 .share-button{
   width: 15vw; height: 7vh; margin-top: 3vh; display: flex; align-items: center; justify-content: center;
 }
+.facebookicon{
+  width: 17%;
+  margin-right: 15px;
+}
+
 footer button{
   margin-left: 2vw;  color: white; font-weight: 400; padding: .8vh 3.5vw; border: 3.5px solid white;
 }
@@ -528,6 +537,7 @@ footer button{
 
 .b-footer{
   flex-direction: column; height: 82vh;
+  background-color: #E9DA95;
 }
 
 .text-wrap{
