@@ -286,7 +286,7 @@ button {
 .logo {
   width: 6%;
   position: absolute;
-  right: 1%;
+  left: 1%;
   top: 1%;
 }
 
@@ -569,4 +569,28 @@ footer button{
 
 .b-8vh{
   bottom: -8vh;
+}
+.nav-container{
+  
+}
+
+.dot-container{
+  position: absolute;
+  top: 3vh;
+  left: 2vw;
+  height: fit-content;
+  width: fit-content;
+  display: flex;
+}
+.dots{
+  z-index: 5;
+  width: 3vh;
+  height: 3vh;
+  border-radius: 50%;
+  background-color: #fffe;
+  margin: 8px;
+}
+.dots:hover, .active{
+  background-color: #FF7C33;
+  cursor: pointer;
 }

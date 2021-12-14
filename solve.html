@@ -1,237 +1,339 @@
 <html lang="en">
+  <head>
+    <meta
+      charset="UTF-8"
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>เกษตร(มี)กรรม</title>
+    <link
+      id="wide"
+      rel="stylesheet"
+      media="screen and (min-width: 900px)"
+      type="text/css"
+      href="widestyle.css"
+    />
+    <link
+      id="mobile"
+      rel="stylesheet"
+      media="screen and (max-width: 900px)"
+      type="text/css"
+      href="smallstyle.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Mitr:wght@200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  </head>
 
-<head>
-  <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>เกษตร(มี)กรรม</title>
-  <link rel="stylesheet" media="screen and (min-width: 900px)" type="text/css" href="widestyle.css" />
-  <link rel="stylesheet" media="screen and (max-width: 900px)" type="text/css" href="smallstyle.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Mitr:wght@200;300;400;500;600;700&display=swap"
-    rel="stylesheet" />
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-</head>
+  <body>
+    <div class="slider solve-bg">
+      <a href="index.html">
+        <img src="img/logoเกษตร-01 1.png" alt="" class="p-logo"
+      /></a>
 
-<body>
-  <div class="slider solve-bg">
-    <a href="index.html">
-      <img src="img/logoเกษตร-01 1.png" alt="" class="p-logo" /></a>
+      <a href="#0" class="next control hide"
+        ><img src="img/arrow2.png" alt="" width="80%"
+      /></a>
+      <a href="#0" class="prev control hide"
+        ><img src="img/arrow1.png" alt="" width="80%"
+      /></a>
 
-    <a href="#0" class="next control hide"><img src="img/arrow2.png" alt="" width="80%" /></a>
-    <a href="#0" class="prev control hide"><img src="img/arrow1.png" alt="" width="80%" /></a>
+      <a href="#0" class="next control hide-w"
+        ><img src="img/arrow02.png" alt="" width="80%"
+      /></a>
+      <a href="#0" class="prev control hide-w"
+        ><img src="img/arrow01.png" alt="" width="80%"
+      /></a>
+      <ul>
+        <!-- slide 1 -->
+        <li class="fullscreen" id="slide1">
+          <div
+            class="flex-center index text-center b-15vh"
+            id="parallexText"
+            style="flex-direction: column"
+          >
+            <h3 class="title hide" style="font-size: 4.5vw">
+              แนวทางการแก้ไขปัญหา
+            </h3>
+            <h6 class="title hide-w t-orange">
+              <span class="title-s">แนวทาง</span><br />การแก้ไขปัญหา
+            </h6>
+            <div class="hide" style="margin-left: -10vw; margin-top: 3vh">
+              <h5 class="bold mp-0" style="color: black">1. ปัญหาที่ดิน</h5>
+              <p style="color: black; text-align: left">
+                <b style="font-size: 1.7vw">ยุติข้อพิพาท</b
+                >ระหว่างรัฐกับประชาชนที่ต้องการมีที่ดิน<br />ให้รัฐช่วยออกแบบนโยบายในการบริหารจัดการพื้นที่เกษตร<br />ออกกรรมสิทธิ์ที่ดินเพื่อกระจายการถือครอง<br />และช่วยลดการกว้านซื้อจากนายทุน
+              </p>
+            </div>
 
-    <a href="#0" class="next control hide-w"><img src="img/arrow02.png" alt="" width="80%" /></a>
-    <a href="#0" class="prev control hide-w"><img src="img/arrow01.png" alt="" width="80%" /></a>
-    <ul>
-      <!-- slide 1 -->
-      <li class="fullscreen">
-        <div class="flex-center index text-center b-15vh" id="parallexText" style="flex-direction: column;">
-          <h3 class="title hide" style="font-size: 4.5vw">แนวทางการแก้ไขปัญหา</h3>
-          <h6 class="title hide-w t-orange "><span class="title-s">แนวทาง</span><br>การแก้ไขปัญหา</h6>
-          <div class="hide" style="margin-left: -10vw; margin-top: 3vh">
-            <h5 class="bold mp-0" style="color: black">1. ปัญหาที่ดิน</h5>
-            <p style="color: black; text-align: left">
-              <b
-                style="font-size: 1.7vw;">ยุติข้อพิพาท</b>ระหว่างรัฐกับประชาชนที่ต้องการมีที่ดิน<br />ให้รัฐช่วยออกแบบนโยบายในการบริหารจัดการพื้นที่เกษตร<br />ออกกรรมสิทธิ์ที่ดินเพื่อกระจายการถือครอง<br />และช่วยลดการกว้านซื้อจากนายทุน
-            </p>
+            <div class="hide-w text-wrap" style="margin-top: -5vh">
+              <h5 class="bold mp-0" style="color: black">ปัญหาที่ดิน</h5>
+              <p style="color: black; text-align: left">
+                ยุติข้อพิพาทระหว่างรัฐกับประชาชนที่ต้องการมีที่ดิน<br
+                  class="hide"
+                />ให้รัฐช่วยออกแบบนโยบายในการบริหารจัดการพื้นที่เกษตร<br
+                  class="hide"
+                />ออกกรรมสิทธิ์ที่ดินเพื่อกระจายการถือครอง<br
+                  class="hide"
+                />และช่วยลดการกว้านซื้อจากนายทุน
+              </p>
+            </div>
+            <img class="index solve-img1 hide" src="img/solve_1.gif" />
+            <img class="solve-img1 hide-w" src="img/solve_1.gif" />
           </div>
+        </li>
+        <!-- slide 1 -->
 
-          <div class="hide-w text-wrap" style="margin-top: -5vh;">
-            <h5 class="bold mp-0" style="color: black">ปัญหาที่ดิน</h5>
-            <p style="color: black; text-align: left">
-              ยุติข้อพิพาทระหว่างรัฐกับประชาชนที่ต้องการมีที่ดิน<br
-                class="hide" />ให้รัฐช่วยออกแบบนโยบายในการบริหารจัดการพื้นที่เกษตร<br
-                class="hide" />ออกกรรมสิทธิ์ที่ดินเพื่อกระจายการถือครอง<br class="hide" />และช่วยลดการกว้านซื้อจากนายทุน
-            </p>
+        <!-- slide 2 -->
+        <li class="fullscreen" id="slide2">
+          <div
+            class="flex-center index text-center"
+            id="parallexText"
+            style="flex-direction: column"
+          >
+            <div class="wh-auto hide" style="margin-left: 37vw">
+              <h5 class="bold mp-0" style="color: black">2. หนี้สิน</h5>
+              <p style="color: black; text-align: left; margin-top: 4vh">
+                <b style="font-size: 1.7vw">ในปัจจุบัน</b
+                >การกู้เงินในธนาคารระบบทุนนิยมของเกษตรกร<br />ต้องเสียภาษีถึง 20
+                เปอร์เซ็นต์ต่อเดือน<br />ให้แก้ปัญหาโดยใช้ระบบเครดิตทางเลือก<br />จากระบบบิ๊กดาต้าและระบบดิจิทัล<br />ซึ่งทำให้รู้รายจ่ายของเกษตรกร
+                ค่าไฟ ค่าประปา ย้อนหลังสิบปี<br />เมื่อนำข้อมูลเหล่านั้นมาเข้าสู่ระบบจะทำให้รู้<br />แพทเทิร์นในการใช้จ่ายเพิ่มเครดิตให้แก่เกษตรกร<br />และสามารถที่จะปล่อยกู้ได้
+              </p>
+            </div>
+
+            <div class="wh-auto hide-w text-wrap" style="margin-bottom: 3vh">
+              <h5 class="bold mp-0" style="color: black">หนี้สิน</h5>
+              <p style="color: black; text-align: left">
+                ในปัจจุบันการกู้เงินในธนาคารระบบทุนนิยมของเกษตรกร
+                ต้องเสียภาษีถึง 20 เปอร์เซ็นต์ต่อเดือน
+                ให้แก้ปัญหาโดยใช้ระบบเครดิตทางเลือกจากระบบบิ๊กดาต้าและระบบดิจิทัล
+                ซึ่งทำให้รู้รายจ่ายของเกษตรกร ค่าไฟ ค่าประปา ย้อนหลังสิบปี
+                เมื่อนำข้อมูลเหล่านั้นมาเข้าสู่ระบบจะทำให้รู้แพทเทิร์นในการใช้จ่ายเพิ่มเครดิตให้แก่เกษตรกรและสามารถที่จะปล่อยกู้ได้
+              </p>
+            </div>
+            <img
+              class="index hide"
+              style="left: 10vw; top: 10vh"
+              src="img/solve_2.gif"
+              width="43%"
+            />
+
+            <img class="hide-w" src="img/solve_2.gif" width="100%" />
           </div>
-          <img class="index solve-img1 hide" src="img/solve_1.gif" />
-          <img class="solve-img1 hide-w" src="img/solve_1.gif" />
-        </div>
-      </li>
-      <!-- slide 1 -->
+        </li>
+        <!-- slide 2 -->
 
-      <!-- slide 2 -->
-      <li class="fullscreen">
-        <div class="flex-center index text-center" id="parallexText" style="flex-direction: column">
-          <div class="wh-auto hide" style="margin-left: 37vw">
-            <h5 class="bold mp-0" style="color: black">2. หนี้สิน</h5>
-            <p style="color: black; text-align: left; margin-top: 4vh">
-              <b style="font-size: 1.7vw;">ในปัจจุบัน</b>การกู้เงินในธนาคารระบบทุนนิยมของเกษตรกร<br />ต้องเสียภาษีถึง
-              20
-              เปอร์เซ็นต์ต่อเดือน<br />ให้แก้ปัญหาโดยใช้ระบบเครดิตทางเลือก<br />จากระบบบิ๊กดาต้าและระบบดิจิทัล<br />ซึ่งทำให้รู้รายจ่ายของเกษตรกร
-              ค่าไฟ ค่าประปา
-              ย้อนหลังสิบปี<br />เมื่อนำข้อมูลเหล่านั้นมาเข้าสู่ระบบจะทำให้รู้<br />แพทเทิร์นในการใช้จ่ายเพิ่มเครดิตให้แก่เกษตรกร<br />และสามารถที่จะปล่อยกู้ได้
-            </p>
+        <!-- slide 3 -->
+        <li class="fullscreen">
+          <div
+            class="flex-center index text-center"
+            id="parallexText"
+            style="flex-direction: column"
+          >
+            <div
+              class="wh-auto hide"
+              style="margin-top: -15vh; margin-left: -25vw"
+            >
+              <h5 class="bold mp-0" style="color: black">
+                3. สารเคมี และ<br />การประกันสินค้า
+              </h5>
+              <p style="color: black; text-align: left; margin-top: 4vh">
+                <b style="font-size: 1.7vw">นโยบาย Green China</b>
+                มีจุดประสงค์ในการลดสารเคมี<br />ภายในภาคการเกษตร 10%
+                โดยการตั้งธนาคารชีวภาพ<br />ที่มีการสนับสนุนการใช้สมุนไพร
+                เป็นตำรับมากกว่า 90 ตำรับ<br />และมีสินค้ามากกว่า 2,500
+                กว่าสินค้า
+                <br />ซึ่งประเทศจีนเป็นประเทศที่ไทยนำเข้าสารเคมี<br />ทางการเกษตรมากที่สุด<br /><br />
+                รัฐบาลต้องคอยระวังเรื่องการคอรัปชั่นที่อาจจะเกิดขึ้นได้<br />เช่น
+                สิทธิ์มี 10 ไร่ สวมสิทธิ์เป็น 20 ไร่<br />ความเหลื่อมล้ำในการชดเชย
+                ตัวอย่างเช่น ถ้าเกษตรกร<br />เช่าที่ดินทำแล้วไม่มีสัญญาในการเช่าจะมีโอกาสจะ<br />
+                ได้รับเงินชดเชยจากรัฐหรือไม่
+              </p>
+            </div>
+
+            <div class="wh-auto text-wrap hide-w">
+              <h5 class="bold mp-0" style="color: black">
+                สารเคมี และ<br />การประกันสินค้า
+              </h5>
+              <p style="color: black; text-align: left; margin-top: 4vh">
+                นโยบาย Green China มีจุดประสงค์ในการลดสารเคมีภายในภาคการเกษตร
+                10% โดยการตั้งธนาคารชีวภาพที่มีการสนับสนุนการใช้สมุนไพร
+                เป็นตำรับมากกว่า 90 ตำรับ และมีสินค้ามากกว่า 2,500 กว่าสินค้า
+                ซึ่งประเทศจีนเป็นประเทศที่ไทยนำเข้าสารเคมีทางการเกษตรมากที่สุด<br /><br />
+                รัฐบาลต้องคอยระวังเรื่องการคอรัปชั่นที่อาจจะเกิดขึ้นได้ เช่น
+                สิทธิ์มี 10 ไร่ สวมสิทธิ์เป็น 20 ไร่ ความเหลื่อมล้ำในการชดเชย
+                ตัวอย่างเช่น
+                ถ้าเกษตรกรเช่าที่ดินทำแล้วไม่มีสัญญาในการเช่าจะมีโอกาสจะ
+                ได้รับเงินชดเชยจากรัฐหรือไม่
+              </p>
+            </div>
+            <img
+              class="index hide"
+              style="left: 50vw; bottom: -2vh"
+              src="img/solve_3.gif"
+              width="35%"
+            />
+
+            <img class="hide-w" src="img/solve_3.gif" width="55%" />
           </div>
+        </li>
+        <!-- slide 3 -->
 
-          <div class="wh-auto hide-w text-wrap" style="margin-bottom: 3vh;">
-            <h5 class="bold mp-0" style="color: black">หนี้สิน</h5>
-            <p style="color: black; text-align: left;">
-              ในปัจจุบันการกู้เงินในธนาคารระบบทุนนิยมของเกษตรกร ต้องเสียภาษีถึง
-              20 เปอร์เซ็นต์ต่อเดือน ให้แก้ปัญหาโดยใช้ระบบเครดิตทางเลือกจากระบบบิ๊กดาต้าและระบบดิจิทัล
-              ซึ่งทำให้รู้รายจ่ายของเกษตรกร
-              ค่าไฟ ค่าประปา ย้อนหลังสิบปี
-              เมื่อนำข้อมูลเหล่านั้นมาเข้าสู่ระบบจะทำให้รู้แพทเทิร์นในการใช้จ่ายเพิ่มเครดิตให้แก่เกษตรกรและสามารถที่จะปล่อยกู้ได้
-            </p>
+        <!-- slide 4 -->
+        <li class="fullscreen">
+          <div
+            class="flex-center index text-center"
+            id="parallexText"
+            style="flex-direction: column"
+          >
+            <div
+              class="wh-auto hide"
+              style="margin-top: -15vh; margin-left: 38vw"
+            >
+              <h5 class="bold mp-0" style="color: black">
+                4. การแปรรูปสินค้าทางการเกษตร<br />และนวัตกรรมการเกษตร
+              </h5>
+              <p style="color: black; text-align: left; margin-top: 4vh">
+                <b style="font-size: 1.7vw">เนื่องจากต้นทุน</b
+                >ในการแปรรูปสินค้าทางการเกษตร<br />
+                และนวัตกรรมนั้นต้องใช้ต้นทุนสูงรวมกับหนี้สินที่<br />
+                เกษตรกรมักจะมีด้วยแล้วทำให้เกษตรกรไม่มีเงินทุน<br />เพื่อใช้ในการแปรรูปสินค้าหรือหานวัตกรรมใหม่
+                ๆ<br />
+                มาปรับใช้จึงต้องเริ่มแก้ปัญหาจากปัญหาที่ดินและหนี้สิน<br />
+                รัฐควรมีมาตราการช่วยเหลือการประกันราคา<br />
+                เสนอเครดิตทางเลือกเพื่อลดค่าใช้จ่ายและ<br />
+                ให้เกษตรกรสามารถกู้ยืมเงินได้โดยไม่ต้องกลัว<br />ค่าภาษีที่สูงเกินไป
+              </p>
+            </div>
+            <img
+              class="index hide"
+              style="left: 17vw; bottom: -5vh"
+              src="img/solve_4.gif"
+              width="35%"
+            />
+
+            <div class="wh-auto hide-w text-wrap">
+              <h5 class="bold mp-0" style="color: black">
+                การแปรรูปสินค้าทางการเกษตร<br />และนวัตกรรมการเกษตร
+              </h5>
+              <p style="color: black; text-align: left">
+                เนื่องจากต้นทุนในการแปรรูปสินค้าทางการเกษตร
+                และนวัตกรรมนั้นต้องใช้ต้นทุนสูงรวมกับหนี้สินที่
+                เกษตรกรมักจะมีด้วยแล้วทำให้เกษตรกรไม่มีเงินทุน
+                เพื่อใช้ในการแปรรูปสินค้าหรือหานวัตกรรมใหม่ ๆ
+                มาปรับใช้จึงต้องเริ่มแก้ปัญหาจากปัญหาที่ดินและหนี้สิน
+                รัฐควรมีมาตราการช่วยเหลือการประกันราคา
+                เสนอเครดิตทางเลือกเพื่อลดค่าใช้จ่ายและ
+                ให้เกษตรกรสามารถกู้ยืมเงินได้โดยไม่ต้องกลัวค่าภาษีที่สูงเกินไป
+              </p>
+            </div>
+            <img class="hide-w" src="img/solve_4.gif" width="70%" />
           </div>
-          <img class="index hide" style="left: 10vw; top: 10vh" src="img/solve_2.gif" width="43%" />
+        </li>
+        <!-- slide 4 -->
 
-          <img class="hide-w" src="img/solve_2.gif" width="100%" />
-        </div>
-      </li>
-      <!-- slide 2 -->
+        <!-- slide 5 -->
+        <li class="fullscreen">
+          <div
+            class="flex-center index text-center b-8vh"
+            id="parallexText"
+            style="flex-direction: column"
+          >
+            <div class="wh-auto hide">
+              <h5 class="bold mp-0" style="color: black">
+                5. การท่องเที่ยวเชิงเกษตร
+              </h5>
+              <p style="color: black; text-align: left; margin-top: 4vh">
+                <b style="font-size: 1.7vw">ต้องเริ่มแก้ปัญหาทางด้านที่ดิน</b
+                >ที่เกษตรกรไม่มีที่ดินทำกินเป็นของตัวเองก่อนโดยให้<br />
+                ทางรัฐช่วดจัดสรรที่ดินและยับยั้งการกว้านซื้อที่จากนายทุน
+                เมื่อเกษตรกรมีที่ดิน<br />
+                เป็นของตัวเองแล้วควรส่งเสริมให้เกิดการท่องเที่ยวทางเกษตร
+                เพื่อเป็นการพัฒนาพื้นที่<br />การเกษตร
+                ส่งเสริมให้เกษตรกรมีทางเลือกและเพิ่มรายได้จากการท่องเที่ยวให้กับ
+                เกษตรกร<br />และยังช่วยเสริมสร้างความรู้ให้กับประชากรช่วยในการอนุรักษ์
+                อาชีพเกษตรกรรมในระยะยาว
+              </p>
+            </div>
+            <img
+              class="hide"
+              style="margin-top: 5vh"
+              src="img/solve_5.gif"
+              width="38%"
+            />
+            <a href="conclusion.html">
+              <img
+                class="link-final hide"
+                style="right: 8vw; bottom: 6vh"
+                src="img/finalsign.png"
+                width="18%"
+            /></a>
 
-      <!-- slide 3 -->
-      <li class="fullscreen">
-        <div class="flex-center index text-center" id="parallexText" style="flex-direction: column">
-          <div class="wh-auto hide" style="margin-top: -15vh; margin-left: -25vw">
-            <h5 class="bold mp-0" style="color: black">
-              3. สารเคมี และ<br />การประกันสินค้า
-            </h5>
-            <p style="color: black; text-align: left; margin-top: 4vh">
-              <b style="font-size: 1.7vw;">นโยบาย Green China</b> มีจุดประสงค์ในการลดสารเคมี<br />ภายในภาคการเกษตร
-              10% โดยการตั้งธนาคารชีวภาพ<br />ที่มีการสนับสนุนการใช้สมุนไพร
-              เป็นตำรับมากกว่า 90 ตำรับ<br />และมีสินค้ามากกว่า 2,500
-              กว่าสินค้า
-              <br />ซึ่งประเทศจีนเป็นประเทศที่ไทยนำเข้าสารเคมี<br />ทางการเกษตรมากที่สุด<br /><br />
-              รัฐบาลต้องคอยระวังเรื่องการคอรัปชั่นที่อาจจะเกิดขึ้นได้<br />เช่น
-              สิทธิ์มี 10 ไร่ สวมสิทธิ์เป็น 20 ไร่<br />ความเหลื่อมล้ำในการชดเชย
-              ตัวอย่างเช่น ถ้าเกษตรกร<br />เช่าที่ดินทำแล้วไม่มีสัญญาในการเช่าจะมีโอกาสจะ<br />
-              ได้รับเงินชดเชยจากรัฐหรือไม่
-            </p>
+            <div class="wh-auto hide-w text-wrap">
+              <h5 class="bold mp-0" style="color: black">
+                การท่องเที่ยวเชิงเกษตร
+              </h5>
+              <p style="color: black; text-align: left">
+                ต้องเริ่มแก้ปัญหาทางด้านที่ดินที่เกษตรกรไม่มีที่ดินทำกินเป็นของตัวเองก่อนโดยให้
+                ทางรัฐช่วดจัดสรรที่ดินและยับยั้งการกว้านซื้อที่จากนายทุน
+                เมื่อเกษตรกรมีที่ดิน
+                เป็นของตัวเองแล้วควรส่งเสริมให้เกิดการท่องเที่ยวทางเกษตร
+                เพื่อเป็นการพัฒนาพื้นที่การเกษตร
+                ส่งเสริมให้เกษตรกรมีทางเลือกและเพิ่มรายได้จากการท่องเที่ยวให้กับ
+                เกษตรกร
+                และยังช่วยเสริมสร้างความรู้ให้กับประชากรช่วยในการอนุรักษ์
+                อาชีพเกษตรกรรมในระยะยาว
+              </p>
+            </div>
+            <img
+              class="hide-w"
+              style="margin-top: 5vh"
+              src="img/solve_5.gif"
+              width="80%"
+            />
+            <a href="conclusion.html">
+              <img
+                class="link-final hide-w"
+                src="img/finalsign.png"
+                width="38%"
+            /></a>
           </div>
+        </li>
+        <!-- slide 5 -->
+      </ul>
 
-          <div class="wh-auto text-wrap hide-w">
-            <h5 class="bold mp-0" style="color: black">
-              สารเคมี และ<br />การประกันสินค้า
-            </h5>
-            <p style="color: black; text-align: left; margin-top: 4vh">
-              นโยบาย Green China มีจุดประสงค์ในการลดสารเคมีภายในภาคการเกษตร
-              10% โดยการตั้งธนาคารชีวภาพที่มีการสนับสนุนการใช้สมุนไพร
-              เป็นตำรับมากกว่า 90 ตำรับ และมีสินค้ามากกว่า 2,500
-              กว่าสินค้า
-              ซึ่งประเทศจีนเป็นประเทศที่ไทยนำเข้าสารเคมีทางการเกษตรมากที่สุด<br /><br />
-              รัฐบาลต้องคอยระวังเรื่องการคอรัปชั่นที่อาจจะเกิดขึ้นได้ เช่น
-              สิทธิ์มี 10 ไร่ สวมสิทธิ์เป็น 20 ไร่ ความเหลื่อมล้ำในการชดเชย
-              ตัวอย่างเช่น ถ้าเกษตรกรเช่าที่ดินทำแล้วไม่มีสัญญาในการเช่าจะมีโอกาสจะ
-              ได้รับเงินชดเชยจากรัฐหรือไม่
-            </p>
-          </div>
-          <img class="index hide" style="left: 50vw; bottom: -2vh" src="img/solve_3.gif" width="35%" />
+      <div class="dot-container">
+        <div class="dots" onclick="currentSlide(1)"></div>
+        <div class="dots" onclick="currentSlide(2)"></div>
+        <div class="dots" onclick="currentSlide(3)"></div>
+        <div class="dots" onclick="currentSlide(4)"></div>
+        <div class="dots" onclick="currentSlide(5)"></div>
+      </div>
+    </div>
+  </body>
 
-          <img class="hide-w" src="img/solve_3.gif" width="55%" />
-        </div>
-      </li>
-      <!-- slide 3 -->
+  <script>
 
-      <!-- slide 4 -->
-      <li class="fullscreen">
-        <div class="flex-center index text-center" id="parallexText" style="flex-direction: column">
-          <div class="wh-auto hide" style="margin-top: -15vh; margin-left: 38vw">
-            <h5 class="bold mp-0" style="color: black">
-              4. การแปรรูปสินค้าทางการเกษตร<br />และนวัตกรรมการเกษตร
-            </h5>
-            <p style="color: black; text-align: left; margin-top: 4vh">
-              <b style="font-size: 1.7vw;">เนื่องจากต้นทุน</b>ในการแปรรูปสินค้าทางการเกษตร<br />
-              และนวัตกรรมนั้นต้องใช้ต้นทุนสูงรวมกับหนี้สินที่<br />
-              เกษตรกรมักจะมีด้วยแล้วทำให้เกษตรกรไม่มีเงินทุน<br />เพื่อใช้ในการแปรรูปสินค้าหรือหานวัตกรรมใหม่
-              ๆ<br />
-              มาปรับใช้จึงต้องเริ่มแก้ปัญหาจากปัญหาที่ดินและหนี้สิน<br />
-              รัฐควรมีมาตราการช่วยเหลือการประกันราคา<br />
-              เสนอเครดิตทางเลือกเพื่อลดค่าใช้จ่ายและ<br />
-              ให้เกษตรกรสามารถกู้ยืมเงินได้โดยไม่ต้องกลัว<br />ค่าภาษีที่สูงเกินไป
-            </p>
-          </div>
-          <img class="index hide" style="left: 17vw; bottom: -5vh" src="img/solve_4.gif" width="35%" />
+    jQuery(document).ready(function ($) {
+      var slideCount = $(".slider ul li").length;
+      var slideWidth = $(".slider ul li").width();
+      var slideHeight = $(".slider ul li").height();
+      var slideUlWidth = slideCount * slideWidth;
+      var index = 1;
+      var dots = document.getElementsByClassName("dots");
 
-          <div class="wh-auto hide-w text-wrap">
-            <h5 class="bold mp-0" style="color: black">
-              การแปรรูปสินค้าทางการเกษตร<br />และนวัตกรรมการเกษตร
-            </h5>
-            <p style="color: black; text-align: left; ">
-              เนื่องจากต้นทุนในการแปรรูปสินค้าทางการเกษตร
-              และนวัตกรรมนั้นต้องใช้ต้นทุนสูงรวมกับหนี้สินที่
-              เกษตรกรมักจะมีด้วยแล้วทำให้เกษตรกรไม่มีเงินทุน เพื่อใช้ในการแปรรูปสินค้าหรือหานวัตกรรมใหม่
-              ๆ
-              มาปรับใช้จึงต้องเริ่มแก้ปัญหาจากปัญหาที่ดินและหนี้สิน
-              รัฐควรมีมาตราการช่วยเหลือการประกันราคา
-              เสนอเครดิตทางเลือกเพื่อลดค่าใช้จ่ายและ
-              ให้เกษตรกรสามารถกู้ยืมเงินได้โดยไม่ต้องกลัวค่าภาษีที่สูงเกินไป
-            </p>
-          </div>
-          <img class="hide-w" src="img/solve_4.gif" width="70%" />
-        </div>
+      $(".slider").css({ "max-width": slideWidth, height: slideHeight });
+      $(".slider ul").css({ width: slideUlWidth, "margin-left": -slideWidth });
+      $(".slider ul li:last-child").prependTo($(".slider ul"));
 
-      </li>
-      <!-- slide 4 -->
-
-      <!-- slide 5 -->
-      <li class="fullscreen">
-        <div class="flex-center index text-center b-8vh" id="parallexText" style="flex-direction: column; ">
-          <div class="wh-auto hide">
-            <h5 class="bold mp-0" style="color: black">
-              5. การท่องเที่ยวเชิงเกษตร
-            </h5>
-            <p style="color: black; text-align: left; margin-top: 4vh">
-              <b
-                style="font-size: 1.7vw;">ต้องเริ่มแก้ปัญหาทางด้านที่ดิน</b>ที่เกษตรกรไม่มีที่ดินทำกินเป็นของตัวเองก่อนโดยให้<br />
-              ทางรัฐช่วดจัดสรรที่ดินและยับยั้งการกว้านซื้อที่จากนายทุน
-              เมื่อเกษตรกรมีที่ดิน<br />
-              เป็นของตัวเองแล้วควรส่งเสริมให้เกิดการท่องเที่ยวทางเกษตร
-              เพื่อเป็นการพัฒนาพื้นที่<br />การเกษตร
-              ส่งเสริมให้เกษตรกรมีทางเลือกและเพิ่มรายได้จากการท่องเที่ยวให้กับ
-              เกษตรกร<br />และยังช่วยเสริมสร้างความรู้ให้กับประชากรช่วยในการอนุรักษ์
-              อาชีพเกษตรกรรมในระยะยาว
-            </p>
-          </div>
-          <img class="hide" style="margin-top: 5vh" src="img/solve_5.gif" width="38%" />
-          <a href="conclusion.html">
-            <img class="link-final hide" style="right: 8vw; bottom: 6vh" src="img/finalsign.png" width="18%" /></a>
-
-
-          <div class="wh-auto hide-w text-wrap">
-            <h5 class="bold mp-0" style="color: black">
-              การท่องเที่ยวเชิงเกษตร
-            </h5>
-            <p style="color: black; text-align: left; ">
-              ต้องเริ่มแก้ปัญหาทางด้านที่ดินที่เกษตรกรไม่มีที่ดินทำกินเป็นของตัวเองก่อนโดยให้
-              ทางรัฐช่วดจัดสรรที่ดินและยับยั้งการกว้านซื้อที่จากนายทุน
-              เมื่อเกษตรกรมีที่ดิน
-              เป็นของตัวเองแล้วควรส่งเสริมให้เกิดการท่องเที่ยวทางเกษตร
-              เพื่อเป็นการพัฒนาพื้นที่การเกษตร
-              ส่งเสริมให้เกษตรกรมีทางเลือกและเพิ่มรายได้จากการท่องเที่ยวให้กับ
-              เกษตรกร และยังช่วยเสริมสร้างความรู้ให้กับประชากรช่วยในการอนุรักษ์
-              อาชีพเกษตรกรรมในระยะยาว
-            </p>
-          </div>
-          <img class="hide-w" style="margin-top: 5vh" src="img/solve_5.gif" width="80%" />
-          <a href="conclusion.html">
-            <img class="link-final hide-w" src="img/finalsign.png" width="38%" /></a>
-        </div>
-      </li>
-      <!-- slide 5 -->
-    </ul>
-  </div>
-</body>
-
-<script>
-  $(function () {
-    var slideCount = $(".slider ul li").length;
-    var slideWidth = $(".slider ul li").width();
-    var slideHeight = $(".slider ul li").height();
-    var slideUlWidth = slideCount * slideWidth;
-
-    $(".slider").css({ "max-width": slideWidth, height: slideHeight });
-    $(".slider ul").css({ width: slideUlWidth, "margin-left": -slideWidth });
-    $(".slider ul li:last-child").prependTo($(".slider ul"));
-
-    function moveLeft() {
-      $(".slider ul")
-        .stop()
-        .animate(
+      function moveLeft() {
+        $(".slider ul").animate(
           {
             left: +slideWidth,
           },
@@ -241,12 +343,10 @@
             $(".slider ul").css("left", "");
           }
         );
-    }
+      }
 
-    function moveRight() {
-      $(".slider ul")
-        .stop()
-        .animate(
+      function moveRight() {
+        $(".slider ul").animate(
           {
             left: -slideWidth,
           },
@@ -256,16 +356,16 @@
             $(".slider ul").css("left", "");
           }
         );
-    }
+      }
 
-    $(".next").on("click", function () {
-      moveRight();
+      $(".next").on("click", function () {
+        moveRight();
+      });
+
+      $(".prev").on("click", function () {
+        moveLeft();
+      });
+ 
     });
-
-    $(".prev").on("click", function () {
-      moveLeft();
-    });
-  });
-</script>
-
+  </script>
 </html>
