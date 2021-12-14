@@ -566,3 +566,7 @@ footer button{
 .b-15vh{
   bottom: 15vh;
 }
+
+.b-8vh{
+  bottom: -8vh;
+}
