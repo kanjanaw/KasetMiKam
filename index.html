@@ -42,14 +42,12 @@
       </div>
     </div>
 
-    <div class="nav-container" id="navbar">
-      <a class="menu-item">เกษตร(มี)กรรม</a>
-      <a class="menu-item">เรียนรู้ปัญหาเกษตรกร</a>
-      <a class="menu-item">แนวทางการแก้ไขปัญหา</a>
-
-    </div>
-
     <div class="container third-bg" id="parallex">
+      <div class="nav-container" id="navbar">
+        <a class="menu-item" href="#parallex">เกษตร(มี)กรรม</a>
+        <a class="menu-item" href="minigame.html">เรียนรู้ปัญหาเกษตรกร</a>
+        <a class="menu-item" href="solve.html">แนวทางการแก้ไขปัญหา</a>
+      </div>
       <!-- section 1 -->
       <div class="fullscreen">
         <div
@@ -71,7 +69,7 @@
           <img src="img/gif1.gif" class="sec1-img hide-w" />
         </div>
 
-        <a href="index.html">
+        <a href="#parallex">
           <img src="img/logo_kaset-02.png" alt="" class="logo"
         /></a>
       </div>
@@ -192,7 +190,7 @@ var currentScrollPos = window.pageYOffset;
   if (prevScrollpos > currentScrollPos) {
     document.getElementById("navbar").style.top = "0";
   } else {
-    document.getElementById("navbar").style.top = "-100px";
+    document.getElementById("navbar").style.top = "-80px";
   }
   prevScrollpos = currentScrollPos;
 }
