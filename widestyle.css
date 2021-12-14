@@ -399,6 +399,7 @@ button {
 }
 .pre-solve-bg {
   background-image: url(img/solve_bg1.JPG);
+  background-color: #EDDB8B;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
