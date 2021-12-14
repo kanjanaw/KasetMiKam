@@ -602,6 +602,7 @@ footer button{
   margin: 1.2vh 1.5vw;
   padding: 0;
   text-decoration: none;
+  color: white;
 }
 .dot-container{
   position: absolute;
