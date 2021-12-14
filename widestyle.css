@@ -233,6 +233,7 @@ button {
 
 .first-bg {
   background-image: url(img/BG1.JPG);
+  background-color: #865C37;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -571,9 +572,24 @@ footer button{
   bottom: -8vh;
 }
 .nav-container{
-  
+  z-index: 5;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: fit-content;
+  height: fit-content;
+  background-color: #FF7C33;
+  display: flex;
+  border-radius: 0px 0px 40px 40px;
+  padding: 0vw 3vw;
+  transition: top 0.3s;
 }
-
+.menu-item{
+  font-size: 2vh;
+  margin: 1.2vh 1.5vw;
+  padding: 0;
+  cursor: pointer;
+}
 .dot-container{
   position: absolute;
   top: 3vh;
