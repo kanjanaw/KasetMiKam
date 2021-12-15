@@ -45,6 +45,21 @@ body {
 	padding: 0;
 }
 
+#skip{
+	width: 15vh;
+	margin: 0.5em;
+	position: fixed;
+  	top: 0;
+  	right: 0;
+	z-index: 10;
+  	display: block;
+	cursor: pointer;
+}
+
+#skip:hover{
+	transform: rotateY(30deg);
+}
+
 #farmer{
 	width: 30vh;
 	margin:auto;
@@ -269,4 +284,9 @@ button{
 	#all { display:none; }
 
 
+}
+
+
+#sign-content, #gov-content, #private-content, #jaonee-content, #naitoon-conver1, #chemi-choice, #go-solution{
+	display: none;
 }

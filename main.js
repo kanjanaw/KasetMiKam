@@ -26,6 +26,7 @@ $(window).scroll(function () {
   }
 });
 function end() {
+  goSolution.style.display = "block";
   characterFall.style.display = "none";
   characterEnd.style.display = "block";
 }
