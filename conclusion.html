@@ -58,10 +58,9 @@
       <div id="fb-root"></div>
       <script async defer crossorigin="anonymous" src="https://connect.facebook.net/th_TH/sdk.js#xfbml=1&version=v12.0" nonce="AlAoJTZe"></script>
       
-      <a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fkasetmikam.netlify.app%2F&amp;src=sdkpreparse" class="text-button">
-      <button data-href="https://kasetmikam.netlify.app/" class="share-button">
+      <button data-href="https://kasetmikam.netlify.app/" class="share-button text-button" id="fb-share-button">
         <img src="img/facebook.png" alt="" class="facebookicon">
-          Share</button></a>
+          Share
       </button>
      
 
@@ -83,7 +82,16 @@
   <!-- end -->
 
   <script>
-  
+  var fbButton = document.getElementById('fb-share-button');
+var url = "https://kasetmikam.netlify.app/";
+
+fbButton.addEventListener('click', function() {
+    window.open('https://www.facebook.com/sharer/sharer.php?u=' + url,
+        'facebook-share-dialog',
+        'width=800,height=600'
+    );
+    return false;
+});
   </script>
 </body>
 
